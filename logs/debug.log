@@ -1,0 +1,1374 @@
+2017-07-03 10:36:26 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2017-07-03 10:36:26 ZCoin version v0.8.8.0-xzc (2017-07-03 12:50:27 +0700)
+2017-07-03 10:36:26 Using OpenSSL version OpenSSL 1.0.2g  1 Mar 2016
+2017-07-03 10:36:26 Default data directory /home/aing_d/.zcoin
+2017-07-03 10:36:26 Using data directory /home/aing_d/.zcoin/testnet3
+2017-07-03 10:36:26 Using at most 125 connections (1024 file descriptors available)
+2017-07-03 10:36:26 Using 4 threads for script verification
+2017-07-03 10:36:26 init message: Verifying wallet...
+2017-07-03 10:36:26 dbenv.open LogDir=/home/aing_d/.zcoin/testnet3/database ErrorFile=/home/aing_d/.zcoin/testnet3/db.log
+2017-07-03 10:36:27 Bound to [::]:18168
+2017-07-03 10:36:27 Bound to 0.0.0.0:18168
+2017-07-03 10:36:27 init message: Loading block index...
+2017-07-03 10:36:27 Opening LevelDB in /home/aing_d/.zcoin/testnet3/blocks/index
+2017-07-03 10:36:28 Opened LevelDB successfully
+2017-07-03 10:36:28 Opening LevelDB in /home/aing_d/.zcoin/testnet3/chainstate
+2017-07-03 10:36:28 Opened LevelDB successfully
+2017-07-03 10:36:31 LoadBlockIndexDB(): last block file = 0
+2017-07-03 10:36:31 LoadBlockIndexDB(): last block file info: CBlockFileInfo(blocks=55, size=39091493, heights=0...54, time=2014-10-31...2017-07-03)
+2017-07-03 10:36:31 LoadBlockIndexDB(): transaction index disabled
+2017-07-03 10:36:31 LoadBlockIndexDB(): hashBestChain=c7c456998d029a63a628b69854f70b46f6813c4349b803cf365b5e757ac8be96  height=53 date=2017-07-03 10:20:46
+2017-07-03 10:36:31 init message: Verifying blocks...
+2017-07-03 10:36:31 Verifying last 53 blocks at level 3
+2017-07-03 10:36:31 height : 53
+2017-07-03 10:36:31 Y_CLIENT[L] = eddd7dc78dba924f63601f0ff86601ca143e69c32f9310c7427fc81d9823c0e6
+2017-07-03 10:36:31 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:31 nHeightCheckPoW = 53
+2017-07-03 10:36:31 height : 53
+2017-07-03 10:36:32 Y_CLIENT[L] = eddd7dc78dba924f63601f0ff86601ca143e69c32f9310c7427fc81d9823c0e6
+2017-07-03 10:36:32 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:32 height : 52
+2017-07-03 10:36:33 Y_CLIENT[L] = f108ce23dec8f2dbac22b4e96dae7889afcd5e781531180e18bb6200b5a289cf
+2017-07-03 10:36:33 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:33 nHeightCheckPoW = 52
+2017-07-03 10:36:33 height : 52
+2017-07-03 10:36:33 Y_CLIENT[L] = f108ce23dec8f2dbac22b4e96dae7889afcd5e781531180e18bb6200b5a289cf
+2017-07-03 10:36:33 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:33 height : 51
+2017-07-03 10:36:34 Y_CLIENT[L] = fc516fa817dbd8503d7286fb3b126993f8a157439ec0f93f71f3f47a23b24c91
+2017-07-03 10:36:34 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:34 nHeightCheckPoW = 51
+2017-07-03 10:36:34 height : 51
+2017-07-03 10:36:34 Y_CLIENT[L] = fc516fa817dbd8503d7286fb3b126993f8a157439ec0f93f71f3f47a23b24c91
+2017-07-03 10:36:34 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:34 height : 50
+2017-07-03 10:36:35 Y_CLIENT[L] = a977c5f359315ac8814079146c7c85431b4764ee1d5df1e0172c246c9aae98ab
+2017-07-03 10:36:35 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:35 nHeightCheckPoW = 50
+2017-07-03 10:36:35 height : 50
+2017-07-03 10:36:35 Y_CLIENT[L] = a977c5f359315ac8814079146c7c85431b4764ee1d5df1e0172c246c9aae98ab
+2017-07-03 10:36:35 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:35 height : 49
+2017-07-03 10:36:36 Y_CLIENT[L] = 0500fbadbbf097a3736c1a9cb8aec5d5f7861d2c5473f867cca9a93eb4083b00
+2017-07-03 10:36:36 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:36 nHeightCheckPoW = 49
+2017-07-03 10:36:36 height : 49
+2017-07-03 10:36:36 Y_CLIENT[L] = 0500fbadbbf097a3736c1a9cb8aec5d5f7861d2c5473f867cca9a93eb4083b00
+2017-07-03 10:36:36 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:37 height : 48
+2017-07-03 10:36:37 Y_CLIENT[L] = 8ff00d293dad291ddd51636ccd69502b7de2a5486aa2de7d9f2b6ef1a160e1da
+2017-07-03 10:36:37 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:37 nHeightCheckPoW = 48
+2017-07-03 10:36:37 height : 48
+2017-07-03 10:36:38 Y_CLIENT[L] = 8ff00d293dad291ddd51636ccd69502b7de2a5486aa2de7d9f2b6ef1a160e1da
+2017-07-03 10:36:38 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:38 height : 47
+2017-07-03 10:36:38 Y_CLIENT[L] = 513f90b869c25ee4f4a14d48ec97ace2615fe9f1ba13a8e8ff5ea2c50a3b21a1
+2017-07-03 10:36:38 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:38 nHeightCheckPoW = 47
+2017-07-03 10:36:38 height : 47
+2017-07-03 10:36:39 Y_CLIENT[L] = 513f90b869c25ee4f4a14d48ec97ace2615fe9f1ba13a8e8ff5ea2c50a3b21a1
+2017-07-03 10:36:39 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:39 height : 46
+2017-07-03 10:36:39 Y_CLIENT[L] = 3c172ee75f2a4b5caa11e52722a06856c1320b0c881eb2815d68d10dd3f73d63
+2017-07-03 10:36:39 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:39 nHeightCheckPoW = 46
+2017-07-03 10:36:39 height : 46
+2017-07-03 10:36:40 Y_CLIENT[L] = 3c172ee75f2a4b5caa11e52722a06856c1320b0c881eb2815d68d10dd3f73d63
+2017-07-03 10:36:40 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:40 height : 45
+2017-07-03 10:36:40 Y_CLIENT[L] = 2d32cd923cba61fb0b68322a5306f3de749f132ed264d302355a20b27fa1051e
+2017-07-03 10:36:40 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:40 nHeightCheckPoW = 45
+2017-07-03 10:36:40 height : 45
+2017-07-03 10:36:41 Y_CLIENT[L] = 2d32cd923cba61fb0b68322a5306f3de749f132ed264d302355a20b27fa1051e
+2017-07-03 10:36:41 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:41 height : 44
+2017-07-03 10:36:42 Y_CLIENT[L] = 254d02018b8ed71c5d9b0163160848822da72547e8a1e2a312f2b44bcbb9429f
+2017-07-03 10:36:42 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:42 nHeightCheckPoW = 44
+2017-07-03 10:36:42 height : 44
+2017-07-03 10:36:42 Y_CLIENT[L] = 254d02018b8ed71c5d9b0163160848822da72547e8a1e2a312f2b44bcbb9429f
+2017-07-03 10:36:42 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:42 height : 43
+2017-07-03 10:36:43 Y_CLIENT[L] = 8e13e251a40b1e5811f865b6cd7b1de38dfd4c65a3f2b430dd7d04ae77b735df
+2017-07-03 10:36:43 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:43 nHeightCheckPoW = 43
+2017-07-03 10:36:43 height : 43
+2017-07-03 10:36:43 Y_CLIENT[L] = 8e13e251a40b1e5811f865b6cd7b1de38dfd4c65a3f2b430dd7d04ae77b735df
+2017-07-03 10:36:43 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:43 height : 42
+2017-07-03 10:36:44 Y_CLIENT[L] = 9ed3ddcad9b49cac3581f8a7e8a51d206119aa5424a21f32d8e05d60b75ab19e
+2017-07-03 10:36:44 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:44 nHeightCheckPoW = 42
+2017-07-03 10:36:44 height : 42
+2017-07-03 10:36:44 Y_CLIENT[L] = 9ed3ddcad9b49cac3581f8a7e8a51d206119aa5424a21f32d8e05d60b75ab19e
+2017-07-03 10:36:44 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:44 height : 41
+2017-07-03 10:36:45 Y_CLIENT[L] = 379ffa17088dd01cacb1eecc23f47955c087fc1ad7a758fc50580673947a600f
+2017-07-03 10:36:45 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:45 nHeightCheckPoW = 41
+2017-07-03 10:36:45 height : 41
+2017-07-03 10:36:45 Y_CLIENT[L] = 379ffa17088dd01cacb1eecc23f47955c087fc1ad7a758fc50580673947a600f
+2017-07-03 10:36:45 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:45 height : 40
+2017-07-03 10:36:46 Y_CLIENT[L] = bd6ffd0cc307298221b3607e29d94ff0f539be67326e64bc2946d111a6573492
+2017-07-03 10:36:46 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:46 nHeightCheckPoW = 40
+2017-07-03 10:36:46 height : 40
+2017-07-03 10:36:46 Y_CLIENT[L] = bd6ffd0cc307298221b3607e29d94ff0f539be67326e64bc2946d111a6573492
+2017-07-03 10:36:46 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:47 height : 39
+2017-07-03 10:36:47 Y_CLIENT[L] = e5271c6dc3c1d85cf56a8f298f9370033b97a0bdccefa0db4a3e981353153982
+2017-07-03 10:36:47 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:47 nHeightCheckPoW = 39
+2017-07-03 10:36:47 height : 39
+2017-07-03 10:36:48 Y_CLIENT[L] = e5271c6dc3c1d85cf56a8f298f9370033b97a0bdccefa0db4a3e981353153982
+2017-07-03 10:36:48 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:48 height : 38
+2017-07-03 10:36:48 Y_CLIENT[L] = 0a8f504730b0ecc8d442e37d10cd259bb1b668889d5d138781c3beebe0e26ad5
+2017-07-03 10:36:48 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:48 nHeightCheckPoW = 38
+2017-07-03 10:36:48 height : 38
+2017-07-03 10:36:49 Y_CLIENT[L] = 0a8f504730b0ecc8d442e37d10cd259bb1b668889d5d138781c3beebe0e26ad5
+2017-07-03 10:36:49 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:49 height : 37
+2017-07-03 10:36:49 Y_CLIENT[L] = 088566711abdfcc9deefde57160c747e304745056c1c7df1c9a13f37528234ee
+2017-07-03 10:36:49 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:49 nHeightCheckPoW = 37
+2017-07-03 10:36:49 height : 37
+2017-07-03 10:36:50 Y_CLIENT[L] = 088566711abdfcc9deefde57160c747e304745056c1c7df1c9a13f37528234ee
+2017-07-03 10:36:50 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:50 height : 36
+2017-07-03 10:36:50 Y_CLIENT[L] = 0c6429ad4040f298b145e2838006a7a9e7b1f791ce3b4c47eb9ffd1922fa9c7e
+2017-07-03 10:36:50 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:50 nHeightCheckPoW = 36
+2017-07-03 10:36:50 height : 36
+2017-07-03 10:36:51 Y_CLIENT[L] = 0c6429ad4040f298b145e2838006a7a9e7b1f791ce3b4c47eb9ffd1922fa9c7e
+2017-07-03 10:36:51 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:51 height : 35
+2017-07-03 10:36:51 Y_CLIENT[L] = cf6b9222a758b1b0fafb88e14d053b132f6671aba062a94cca9e34e8608a43f0
+2017-07-03 10:36:51 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:51 nHeightCheckPoW = 35
+2017-07-03 10:36:51 height : 35
+2017-07-03 10:36:52 Y_CLIENT[L] = cf6b9222a758b1b0fafb88e14d053b132f6671aba062a94cca9e34e8608a43f0
+2017-07-03 10:36:52 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:52 height : 34
+2017-07-03 10:36:52 Y_CLIENT[L] = c1e0b4229ded0ef6e66d6db0521ea7c9687c522ff5a2ee8e150162f0c72b2599
+2017-07-03 10:36:52 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:52 nHeightCheckPoW = 34
+2017-07-03 10:36:52 height : 34
+2017-07-03 10:36:53 Y_CLIENT[L] = c1e0b4229ded0ef6e66d6db0521ea7c9687c522ff5a2ee8e150162f0c72b2599
+2017-07-03 10:36:53 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:53 height : 33
+2017-07-03 10:36:54 Y_CLIENT[L] = d5aba2c7796ad5ac7783b0538672e2c25665d25553263b0620b16a9bcb73d43d
+2017-07-03 10:36:54 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:54 nHeightCheckPoW = 33
+2017-07-03 10:36:54 height : 33
+2017-07-03 10:36:54 Y_CLIENT[L] = d5aba2c7796ad5ac7783b0538672e2c25665d25553263b0620b16a9bcb73d43d
+2017-07-03 10:36:54 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:54 height : 32
+2017-07-03 10:36:55 Y_CLIENT[L] = 4e197e3e789c6b47aed10d6e526c5e29691db786337c5ee02635f349f9d6d62a
+2017-07-03 10:36:55 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:55 nHeightCheckPoW = 32
+2017-07-03 10:36:55 height : 32
+2017-07-03 10:36:55 Y_CLIENT[L] = 4e197e3e789c6b47aed10d6e526c5e29691db786337c5ee02635f349f9d6d62a
+2017-07-03 10:36:55 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:55 height : 31
+2017-07-03 10:36:56 Y_CLIENT[L] = 986710dce156237fa9d194185f67fc0c2e12bd4b35d8b8674a748a75e13d3fa5
+2017-07-03 10:36:56 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:56 nHeightCheckPoW = 31
+2017-07-03 10:36:56 height : 31
+2017-07-03 10:36:56 Y_CLIENT[L] = 986710dce156237fa9d194185f67fc0c2e12bd4b35d8b8674a748a75e13d3fa5
+2017-07-03 10:36:56 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:56 height : 30
+2017-07-03 10:36:57 Y_CLIENT[L] = fc559001a1dbda567d95597afc9bd33583aab3bb8d350d75615ccc90a4229985
+2017-07-03 10:36:57 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:57 nHeightCheckPoW = 30
+2017-07-03 10:36:57 height : 30
+2017-07-03 10:36:57 Y_CLIENT[L] = fc559001a1dbda567d95597afc9bd33583aab3bb8d350d75615ccc90a4229985
+2017-07-03 10:36:57 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:36:58 height : 29
+2017-07-03 10:36:58 nHeightCheckPoW = 29
+2017-07-03 10:36:58 height : 29
+2017-07-03 10:36:58 height : 28
+2017-07-03 10:36:58 nHeightCheckPoW = 28
+2017-07-03 10:36:58 height : 28
+2017-07-03 10:36:58 height : 27
+2017-07-03 10:36:58 nHeightCheckPoW = 27
+2017-07-03 10:36:58 height : 27
+2017-07-03 10:36:58 height : 26
+2017-07-03 10:36:58 nHeightCheckPoW = 26
+2017-07-03 10:36:58 height : 26
+2017-07-03 10:36:58 height : 25
+2017-07-03 10:36:58 nHeightCheckPoW = 25
+2017-07-03 10:36:58 height : 25
+2017-07-03 10:36:58 height : 24
+2017-07-03 10:36:58 nHeightCheckPoW = 24
+2017-07-03 10:36:58 height : 24
+2017-07-03 10:36:58 height : 23
+2017-07-03 10:36:58 nHeightCheckPoW = 23
+2017-07-03 10:36:58 height : 23
+2017-07-03 10:36:58 height : 22
+2017-07-03 10:36:58 nHeightCheckPoW = 22
+2017-07-03 10:36:58 height : 22
+2017-07-03 10:36:58 height : 21
+2017-07-03 10:36:58 nHeightCheckPoW = 21
+2017-07-03 10:36:58 height : 21
+2017-07-03 10:36:58 height : 20
+2017-07-03 10:37:13 nHeightCheckPoW = 20
+2017-07-03 10:37:13 height : 20
+2017-07-03 10:37:28 height : 19
+2017-07-03 10:37:28 nHeightCheckPoW = 19
+2017-07-03 10:37:28 height : 19
+2017-07-03 10:37:28 height : 18
+2017-07-03 10:37:28 nHeightCheckPoW = 18
+2017-07-03 10:37:28 height : 18
+2017-07-03 10:37:28 height : 17
+2017-07-03 10:37:28 nHeightCheckPoW = 17
+2017-07-03 10:37:28 height : 17
+2017-07-03 10:37:28 height : 16
+2017-07-03 10:37:28 nHeightCheckPoW = 16
+2017-07-03 10:37:28 height : 16
+2017-07-03 10:37:28 height : 15
+2017-07-03 10:37:28 nHeightCheckPoW = 15
+2017-07-03 10:37:28 height : 15
+2017-07-03 10:37:28 height : 14
+2017-07-03 10:37:28 nHeightCheckPoW = 14
+2017-07-03 10:37:28 height : 14
+2017-07-03 10:37:28 height : 13
+2017-07-03 10:37:28 nHeightCheckPoW = 13
+2017-07-03 10:37:28 height : 13
+2017-07-03 10:37:28 height : 12
+2017-07-03 10:37:28 nHeightCheckPoW = 12
+2017-07-03 10:37:28 height : 12
+2017-07-03 10:37:28 height : 11
+2017-07-03 10:37:28 nHeightCheckPoW = 11
+2017-07-03 10:37:28 height : 11
+2017-07-03 10:37:29 height : 10
+2017-07-03 10:37:29 nHeightCheckPoW = 10
+2017-07-03 10:37:29 height : 10
+2017-07-03 10:37:29 height : 9
+2017-07-03 10:37:29 nHeightCheckPoW = 9
+2017-07-03 10:37:29 height : 9
+2017-07-03 10:37:29 height : 8
+2017-07-03 10:37:29 nHeightCheckPoW = 8
+2017-07-03 10:37:29 height : 8
+2017-07-03 10:37:29 height : 7
+2017-07-03 10:37:29 nHeightCheckPoW = 7
+2017-07-03 10:37:29 height : 7
+2017-07-03 10:37:29 height : 6
+2017-07-03 10:37:29 nHeightCheckPoW = 6
+2017-07-03 10:37:29 height : 6
+2017-07-03 10:37:29 height : 5
+2017-07-03 10:37:29 nHeightCheckPoW = 5
+2017-07-03 10:37:29 height : 5
+2017-07-03 10:37:30 height : 4
+2017-07-03 10:37:30 nHeightCheckPoW = 4
+2017-07-03 10:37:30 height : 4
+2017-07-03 10:37:30 height : 3
+2017-07-03 10:37:30 nHeightCheckPoW = 3
+2017-07-03 10:37:30 height : 3
+2017-07-03 10:37:30 height : 2
+2017-07-03 10:37:30 nHeightCheckPoW = 2
+2017-07-03 10:37:30 height : 2
+2017-07-03 10:37:30 height : 1
+2017-07-03 10:37:30 nHeightCheckPoW = 1
+2017-07-03 10:37:30 height : 1
+2017-07-03 10:37:30 No coin database inconsistencies in last 53 blocks (53 transactions)
+2017-07-03 10:37:30  block index           62980ms
+2017-07-03 10:37:30 init message: Loading wallet...
+2017-07-03 10:37:30 PROCESS BLOCK = 53
+2017-07-03 10:37:30 height : 53
+2017-07-03 10:37:31 Y_CLIENT[L] = eddd7dc78dba924f63601f0ff86601ca143e69c32f9310c7427fc81d9823c0e6
+2017-07-03 10:37:31 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:37:44 nFileVersion = 80800
+2017-07-03 10:37:44  wallet                13853ms
+2017-07-03 10:37:44 height : 54
+2017-07-03 10:37:45 Y_CLIENT[L] = 0971def3c31759cb3168a59e3578a282b0597e6d3cc8f32b3ba5b1a6fd212b3d
+2017-07-03 10:37:45 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:37:45 nHeightCheckPoW = 54
+2017-07-03 10:37:45 height : 54
+2017-07-03 10:37:45 Y_CLIENT[L] = 0971def3c31759cb3168a59e3578a282b0597e6d3cc8f32b3ba5b1a6fd212b3d
+2017-07-03 10:37:45 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:37:45 height : 54
+2017-07-03 10:37:46 Y_CLIENT[L] = 0971def3c31759cb3168a59e3578a282b0597e6d3cc8f32b3ba5b1a6fd212b3d
+2017-07-03 10:37:46 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:37:46 height : 54
+2017-07-03 10:37:47 Y_CLIENT[L] = 0971def3c31759cb3168a59e3578a282b0597e6d3cc8f32b3ba5b1a6fd212b3d
+2017-07-03 10:37:47 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:37:47 Committing 54 changed transactions to coin database...
+2017-07-03 10:37:47 SetBestChain: new best=b32d5a9365b9515a7cc8be01fc2f3bb4e728f8c211bcf6774357dd9ccf537344  height=54  log2_work=20.028595  tx=55  date=2017-07-03 10:34:04 progress=0.995329
+2017-07-03 10:37:47 init message: Loading addresses...
+2017-07-03 10:37:47 Loaded 2 addresses from peers.dat  48ms
+2017-07-03 10:37:47 mapBlockIndex.size() = 55
+2017-07-03 10:37:47 nBestHeight = 54
+2017-07-03 10:37:47 setKeyPool.size() = 101
+2017-07-03 10:37:47 mapWallet.size() = 0
+2017-07-03 10:37:47 mapAddressBook.size() = 1
+2017-07-03 10:37:47 dnsseed thread start
+2017-07-03 10:37:47 Loading addresses from DNS seeds (could take a while)
+2017-07-03 10:37:47 addcon thread start
+2017-07-03 10:37:47 net thread start
+2017-07-03 10:37:47 opencon thread start
+2017-07-03 10:37:47 dumpaddr thread start
+2017-07-03 10:37:47 msghand thread start
+2017-07-03 10:37:47 init message: Done loading
+2017-07-03 10:37:47 1 addresses found from DNS seeds
+2017-07-03 10:37:47 dnsseed thread exit
+2017-07-03 10:37:48 trying connection 52.232.105.188:18168 lastseen=0.0hrs
+2017-07-03 10:37:48 connected 52.232.105.188:18168
+2017-07-03 10:37:48 send version message: version 90021, blocks=54, us=0.0.0.0:0, them=52.232.105.188:18168, peer=52.232.105.188:18168
+2017-07-03 10:37:48 GetMyExternalIP() received [52.187.176.170] 52.187.176.170:0
+2017-07-03 10:37:48 GetMyExternalIP() returned 52.187.176.170
+2017-07-03 10:37:48 AddLocal(52.187.176.170:18168,4)
+2017-07-03 10:37:48 Added time data, samples 2, offset +0 (+0 minutes)
+2017-07-03 10:37:48 receive version message: /Satoshi:0.8.8/: version 90021, blocks=54, us=52.187.176.170:47016, them=52.232.105.188:18168, peer=52.232.105.188:18168
+2017-07-03 10:37:49 Added 1 addresses from 52.232.105.188: 1 tried, 2 new
+2017-07-03 10:37:54 ThreadRPCServer method=getinfo
+2017-07-03 10:37:54 keypool reserve 2
+2017-07-03 10:37:54 keypool return 2
+2017-07-03 10:37:55 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:37:55 connect() failed after select(): Connection refused
+2017-07-03 10:37:55 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:37:56 connect() failed after select(): Connection refused
+2017-07-03 10:38:02 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:38:02 connect() failed after select(): Connection refused
+2017-07-03 10:38:04 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:38:04 ThreadRPCServer method=setgenerate
+2017-07-03 10:38:04 ZCoinMiner started
+2017-07-03 10:38:04 keypool reserve 2
+2017-07-03 10:38:04 mempool.countZCSpend = 0
+2017-07-03 10:38:04 CreateNewBlock(): total size 1000
+2017-07-03 10:38:04 nHeightCheckPoW = 55
+2017-07-03 10:38:04 Running ZcoinMiner with 1 transactions in block (710749 bytes)
+2017-07-03 10:38:04 hashTarget : 0057321b00000000000000000000000000000000000000000000000000000000
+2017-07-03 10:38:04 Case 2 
+2017-07-03 10:38:04 mtp_hash input = , hashTarget = 0
+2017-07-03 10:38:04 1. Validate all inputs 
+2017-07-03 10:38:04 2. Align memory size 
+2017-07-03 10:38:04 2.1 memory_blocks = 2097152
+2017-07-03 10:38:04 2.2 segment_length = 131072
+2017-07-03 10:38:04 2.3 memory_blocks = 2097152
+2017-07-03 10:38:04 3. Initialization: Hashing inputs, allocating memory, filling first blocks
+2017-07-03 10:38:48 connect() failed after select(): Connection refused
+2017-07-03 10:38:48 4. Filling memory 
+2017-07-03 10:38:50 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:38:50 connect() failed after select(): Connection refused
+2017-07-03 10:38:52 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:38:53 connect() failed after select(): Connection refused
+2017-07-03 10:38:54 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:38:55 connect() failed after select(): Connection refused
+2017-07-03 10:39:01 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:39:02 received block ab6c5e8d8b27af2b66de4edd419cc39c91a57c7f304615d7771404db5e235093
+2017-07-03 10:39:03 connect() failed after select(): Connection refused
+2017-07-03 10:39:03 I-2
+2017-07-03 10:39:05 nHeightCheckPoW = 55
+2017-07-03 10:39:06 height : 55
+2017-07-03 10:39:07 Y_CLIENT[L] = cd2be09ecd65c377637f1330490af27ae71251485ed26880ec61703fcfd27aa7
+2017-07-03 10:39:07 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:39:08 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:39:09 connect() failed after select(): Connection refused
+2017-07-03 10:39:29 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:39:31 connect() failed after select(): Connection refused
+2017-07-03 10:39:56 height : 55
+2017-07-03 10:39:58 Y_CLIENT[L] = cd2be09ecd65c377637f1330490af27ae71251485ed26880ec61703fcfd27aa7
+2017-07-03 10:39:58 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:39:58 nHeightCheckPoW = 55
+2017-07-03 10:39:59 height : 55
+2017-07-03 10:39:59 Y_CLIENT[L] = cd2be09ecd65c377637f1330490af27ae71251485ed26880ec61703fcfd27aa7
+2017-07-03 10:39:59 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:40:09 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:40:11 connect() failed after select(): Connection refused
+2017-07-03 10:40:17 height : 55
+2017-07-03 10:40:18 Y_CLIENT[L] = cd2be09ecd65c377637f1330490af27ae71251485ed26880ec61703fcfd27aa7
+2017-07-03 10:40:18 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:40:20 trying connection 96.44.143.98:18168 lastseen=4.4hrs
+2017-07-03 10:40:26 connect() failed after select(): Connection refused
+2017-07-03 10:40:28 height : 55
+2017-07-03 10:40:29 Y_CLIENT[L] = cd2be09ecd65c377637f1330490af27ae71251485ed26880ec61703fcfd27aa7
+2017-07-03 10:40:29 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:40:32 Committing 1 changed transactions to coin database...
+2017-07-03 10:40:33 SetBestChain: new best=ab6c5e8d8b27af2b66de4edd419cc39c91a57c7f304615d7771404db5e235093  height=55  log2_work=20.029608  tx=56  date=2017-07-03 10:36:37 progress=0.995146
+2017-07-03 10:40:33 ProcessBlock: ACCEPTED
+2017-07-03 10:41:16 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:41:16 connect() failed after select(): Connection refused
+2017-07-03 10:41:18 received block a6ef7371fa4827e3c54236c7be37fc4c788084286e899ba0a9b1c50d4e4766ff
+2017-07-03 10:41:19 I-2
+2017-07-03 10:41:20 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:41:20 nHeightCheckPoW = 56
+2017-07-03 10:41:21 connect() failed after select(): Connection refused
+2017-07-03 10:41:21 height : 56
+2017-07-03 10:41:23 Y_CLIENT[L] = 7fc5500b273752e92f743def25248c318a2a6f2e5ae72c397550d92ed2af5bab
+2017-07-03 10:41:23 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:41:45 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:41:46 connect() failed after select(): Connection refused
+2017-07-03 10:42:26 height : 56
+2017-07-03 10:43:43 Y_CLIENT[L] = 7fc5500b273752e92f743def25248c318a2a6f2e5ae72c397550d92ed2af5bab
+2017-07-03 10:43:44 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:43:44 nHeightCheckPoW = 56
+2017-07-03 10:44:37 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:44:39 height : 56
+2017-07-03 10:45:15 connect() failed after select(): Connection refused
+2017-07-03 10:45:56 Y_CLIENT[L] = 7fc5500b273752e92f743def25248c318a2a6f2e5ae72c397550d92ed2af5bab
+2017-07-03 10:45:56 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:45:56 height : 56
+2017-07-03 10:45:57 Y_CLIENT[L] = 7fc5500b273752e92f743def25248c318a2a6f2e5ae72c397550d92ed2af5bab
+2017-07-03 10:45:57 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:45:57 height : 56
+2017-07-03 10:45:58 Y_CLIENT[L] = 7fc5500b273752e92f743def25248c318a2a6f2e5ae72c397550d92ed2af5bab
+2017-07-03 10:45:58 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 10:45:59 Committing 1 changed transactions to coin database...
+2017-07-03 10:45:59 SetBestChain: new best=a6ef7371fa4827e3c54236c7be37fc4c788084286e899ba0a9b1c50d4e4766ff  height=56  log2_work=20.03062  tx=57  date=2017-07-03 10:38:38 progress=0.991125
+2017-07-03 10:45:59 ProcessBlock: ACCEPTED
+2017-07-03 10:46:06 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:46:07 connect() failed after select(): Connection refused
+2017-07-03 10:46:10 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:46:11 connect() failed after select(): Connection refused
+2017-07-03 10:46:16 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:46:20 connect() failed after select(): Connection refused
+2017-07-03 10:46:55 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:46:56 connect() failed after select(): Connection refused
+2017-07-03 10:47:07 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:47:07 connect() failed after select(): Connection refused
+2017-07-03 10:47:11 trying connection 96.44.143.98:18168 lastseen=4.5hrs
+2017-07-03 10:47:12 connect() failed after select(): Connection refused
+2017-07-03 10:47:15 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:47:16 connect() failed after select(): Connection refused
+2017-07-03 10:47:49 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:47:49 connect() failed after select(): Connection refused
+2017-07-03 10:47:51 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:47:57 connect() failed after select(): Connection refused
+2017-07-03 10:48:02 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:48:03 connect() failed after select(): Connection refused
+2017-07-03 10:48:05 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:48:05 connect() failed after select(): Connection refused
+2017-07-03 10:48:07 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:48:07 connect() failed after select(): Connection refused
+2017-07-03 10:48:08 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:48:09 connect() failed after select(): Connection refused
+2017-07-03 10:48:28 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:48:32 connect() failed after select(): Connection refused
+2017-07-03 10:48:46 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:48:48 connect() failed after select(): Connection refused
+2017-07-03 10:48:59 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:48:59 connect() failed after select(): Connection refused
+2017-07-03 10:50:20 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:50:21 connect() failed after select(): Connection refused
+2017-07-03 10:50:26 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:50:27 connect() failed after select(): Connection refused
+2017-07-03 10:51:46 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:51:47 connect() failed after select(): Connection refused
+2017-07-03 10:52:27 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:52:28 connect() failed after select(): Connection refused
+2017-07-03 10:52:31 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:52:33 connect() failed after select(): Connection refused
+2017-07-03 10:52:37 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:52:38 connect() failed after select(): Connection refused
+2017-07-03 10:52:41 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:52:42 connect() failed after select(): Connection refused
+2017-07-03 10:52:48 Flushed 3 addresses to peers.dat  681ms
+2017-07-03 10:53:10 trying connection 96.44.143.98:18168 lastseen=4.6hrs
+2017-07-03 10:53:29 connect() failed after select(): Connection refused
+2017-07-03 10:53:30 trying connection 96.44.143.98:18168 lastseen=4.7hrs
+2017-07-03 10:53:32 connect() failed after select(): Connection refused
+2017-07-03 10:53:34 trying connection 96.44.143.98:18168 lastseen=4.7hrs
+2017-07-03 10:53:34 connect() failed after select(): Connection refused
+2017-07-03 10:53:36 trying connection 96.44.143.98:18168 lastseen=4.7hrs
+2017-07-03 10:53:36 connect() failed after select(): Connection refused
+2017-07-03 10:53:37 trying connection 96.44.143.98:18168 lastseen=4.7hrs
+2017-07-03 10:53:37 connect() failed after select(): Connection refused
+2017-07-03 10:53:39 trying connection 96.44.143.98:18168 lastseen=4.7hrs
+2017-07-03 10:53:40 connect() failed after select(): Connection refused
+2017-07-03 10:55:34 trying connection 96.44.143.98:18168 lastseen=4.7hrs
+2017-07-03 10:56:07 connect() failed after select(): Connection refused
+2017-07-03 10:56:22 trying connection 96.44.143.98:18168 lastseen=4.7hrs
+2017-07-03 10:57:21 connect() failed after select(): Connection refused
+2017-07-03 11:00:20 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:00:21 connect() failed after select(): Connection refused
+2017-07-03 11:00:45 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:00:45 connect() failed after select(): Connection refused
+2017-07-03 11:00:55 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:01:00 connect() failed after select(): Connection refused
+2017-07-03 11:01:05 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:01:06 connect() failed after select(): Connection refused
+2017-07-03 11:01:16 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:01:18 connect() failed after select(): Connection refused
+2017-07-03 11:01:23 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:01:23 connect() failed after select(): Connection refused
+2017-07-03 11:02:41 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:02:42 connect() failed after select(): Connection refused
+2017-07-03 11:02:50 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:02:50 connect() failed after select(): Connection refused
+2017-07-03 11:02:52 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:02:53 connect() failed after select(): Connection refused
+2017-07-03 11:02:56 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:02:56 connect() failed after select(): Connection refused
+2017-07-03 11:02:58 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:02:58 connect() failed after select(): Connection refused
+2017-07-03 11:03:00 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:03:01 connect() failed after select(): Connection refused
+2017-07-03 11:03:08 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:03:08 connect() failed after select(): Connection refused
+2017-07-03 11:03:12 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:03:13 connect() failed after select(): Connection refused
+2017-07-03 11:03:30 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:03:31 connect() failed after select(): Connection refused
+2017-07-03 11:03:33 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:03:37 connect() failed after select(): Connection refused
+2017-07-03 11:04:10 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:04:11 connect() failed after select(): Connection refused
+2017-07-03 11:04:15 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:04:16 connect() failed after select(): Connection refused
+2017-07-03 11:04:21 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:04:22 connect() failed after select(): Connection refused
+2017-07-03 11:04:23 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:04:24 connect() failed after select(): Connection refused
+2017-07-03 11:04:25 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:04:29 connect() failed after select(): Connection refused
+2017-07-03 11:04:30 trying connection 96.44.143.98:18168 lastseen=4.8hrs
+2017-07-03 11:04:30 connect() failed after select(): Connection refused
+2017-07-03 11:04:42 ResendWalletTransactions()
+2017-07-03 11:05:18 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:05:19 connect() failed after select(): Connection refused
+2017-07-03 11:05:53 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:05:54 connect() failed after select(): Connection refused
+2017-07-03 11:06:05 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:06:06 connect() failed after select(): Connection refused
+2017-07-03 11:06:06 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:06:07 connect() failed after select(): Connection refused
+2017-07-03 11:06:11 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:06:11 connect() failed after select(): Connection refused
+2017-07-03 11:06:26 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:06:27 connect() failed after select(): Connection refused
+2017-07-03 11:06:44 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:06:45 connect() failed after select(): Connection refused
+2017-07-03 11:08:16 Flushed 3 addresses to peers.dat  767ms
+2017-07-03 11:08:19 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:08:20 connect() failed after select(): Connection refused
+2017-07-03 11:08:38 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:08:39 connect() failed after select(): Connection refused
+2017-07-03 11:09:17 trying connection 96.44.143.98:18168 lastseen=4.9hrs
+2017-07-03 11:09:20 connect() failed after select(): Connection refused
+2017-07-03 11:12:48 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:12:49 connect() failed after select(): Connection refused
+2017-07-03 11:13:52 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:13:54 connect() failed after select(): Connection refused
+2017-07-03 11:13:55 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:13:56 connect() failed after select(): Connection refused
+2017-07-03 11:13:57 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:13:58 connect() failed after select(): Connection refused
+2017-07-03 11:13:59 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:14:00 connect() failed after select(): Connection refused
+2017-07-03 11:14:02 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:14:03 connect() failed after select(): Connection refused
+2017-07-03 11:14:17 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:14:18 connect() failed after select(): Connection refused
+2017-07-03 11:14:37 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:14:37 connect() failed after select(): Connection refused
+2017-07-03 11:14:43 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:14:46 connect() failed after select(): Connection refused
+2017-07-03 11:14:48 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:14:50 connect() failed after select(): Connection refused
+2017-07-03 11:14:55 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:14:56 connect() failed after select(): Connection refused
+2017-07-03 11:15:02 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:15:07 connect() failed after select(): Connection refused
+2017-07-03 11:15:22 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:15:22 connect() failed after select(): Connection refused
+2017-07-03 11:15:26 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:15:27 connect() failed after select(): Connection refused
+2017-07-03 11:15:58 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:15:59 connect() failed after select(): Connection refused
+2017-07-03 11:16:01 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:02 connect() failed after select(): Connection refused
+2017-07-03 11:16:06 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:07 connect() failed after select(): Connection refused
+2017-07-03 11:16:10 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:10 connect() failed after select(): Connection refused
+2017-07-03 11:16:12 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:13 connect() failed after select(): Connection refused
+2017-07-03 11:16:22 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:23 connect() failed after select(): Connection refused
+2017-07-03 11:16:24 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:24 connect() failed after select(): Connection refused
+2017-07-03 11:16:27 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:27 connect() failed after select(): Connection refused
+2017-07-03 11:16:38 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:38 connect() failed after select(): Connection refused
+2017-07-03 11:16:39 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:40 connect() failed after select(): Connection refused
+2017-07-03 11:16:43 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:43 connect() failed after select(): Connection refused
+2017-07-03 11:16:49 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:16:50 connect() failed after select(): Connection refused
+2017-07-03 11:17:04 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:17:05 connect() failed after select(): Connection refused
+2017-07-03 11:17:06 trying connection 96.44.143.98:18168 lastseen=5.0hrs
+2017-07-03 11:17:07 connect() failed after select(): Connection refused
+2017-07-03 11:17:21 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:17:22 connect() failed after select(): Connection refused
+2017-07-03 11:17:24 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:17:24 connect() failed after select(): Connection refused
+2017-07-03 11:17:25 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:17:26 connect() failed after select(): Connection refused
+2017-07-03 11:17:30 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:17:30 connect() failed after select(): Connection refused
+2017-07-03 11:17:36 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:17:36 connect() failed after select(): Connection refused
+2017-07-03 11:17:37 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:17:39 connect() failed after select(): Connection refused
+2017-07-03 11:18:13 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:18:13 connect() failed after select(): Connection refused
+2017-07-03 11:18:19 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:18:21 connect() failed after select(): Connection refused
+2017-07-03 11:20:42 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:20:42 connect() failed after select(): Connection refused
+2017-07-03 11:20:44 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:20:45 connect() failed after select(): Connection refused
+2017-07-03 11:20:47 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:20:48 connect() failed after select(): Connection refused
+2017-07-03 11:20:58 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:20:58 connect() failed after select(): Connection refused
+2017-07-03 11:21:11 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:21:11 connect() failed after select(): Connection refused
+2017-07-03 11:21:46 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:21:49 connect() failed after select(): Connection refused
+2017-07-03 11:21:52 trying connection 96.44.143.98:18168 lastseen=5.1hrs
+2017-07-03 11:21:52 connect() failed after select(): Connection refused
+2017-07-03 11:23:24 Y[L] = fd7085963c21f897cee7cc20394252bab2deec644d3adb47a156e979cd105415
+2017-07-03 11:23:47 Flushed 3 addresses to peers.dat  11ms
+2017-07-03 11:23:48 trying connection 96.44.143.98:18168 lastseen=5.2hrs
+2017-07-03 11:23:48 connect() failed after select(): Connection refused
+2017-07-03 11:24:17 Case 2 
+2017-07-03 11:24:17 mtp_hash input = , hashTarget = 0
+2017-07-03 11:24:17 1. Validate all inputs 
+2017-07-03 11:24:17 2. Align memory size 
+2017-07-03 11:24:17 2.1 memory_blocks = 2097152
+2017-07-03 11:24:17 2.2 segment_length = 131072
+2017-07-03 11:24:17 2.3 memory_blocks = 2097152
+2017-07-03 11:24:17 3. Initialization: Hashing inputs, allocating memory, filling first blocks
+2017-07-03 11:25:01 4. Filling memory 
+2017-07-03 11:27:56 trying connection 96.44.143.98:18168 lastseen=5.2hrs
+2017-07-03 11:27:57 connect() failed after select(): Connection refused
+2017-07-03 11:27:59 trying connection 96.44.143.98:18168 lastseen=5.2hrs
+2017-07-03 11:28:00 connect() failed after select(): Connection refused
+2017-07-03 11:28:03 trying connection 96.44.143.98:18168 lastseen=5.2hrs
+2017-07-03 11:28:03 socket recv error 110
+2017-07-03 11:28:03 disconnecting node 52.232.105.188:18168
+2017-07-03 11:28:04 connect() failed after select(): Connection refused
+2017-07-03 11:28:07 trying connection 96.44.143.98:18168 lastseen=5.2hrs
+2017-07-03 11:28:10 connect() failed after select(): Connection refused
+2017-07-03 11:28:11 trying connection 52.232.105.188:18168 lastseen=0.8hrs
+2017-07-03 11:28:12 connected 52.232.105.188:18168
+2017-07-03 11:28:12 send version message: version 90021, blocks=56, us=52.187.176.170:18168, them=52.232.105.188:18168, peer=52.232.105.188:18168
+2017-07-03 11:28:19 receive version message: /Satoshi:0.8.8/: version 90021, blocks=60, us=52.187.176.170:52780, them=52.232.105.188:18168, peer=52.232.105.188:18168
+2017-07-03 11:28:50 trying connection 96.44.143.98:18168 lastseen=5.2hrs
+2017-07-03 11:28:50 connect() failed after select(): Connection refused
+2017-07-03 11:30:00 received block 26ba2cdad1a0630bdbd611654ac676b3d76bdf7a7c2b983027ab88b7623f962b
+2017-07-03 11:30:00 I-2
+2017-07-03 11:30:00 nHeightCheckPoW = 57
+2017-07-03 11:30:00 height : 57
+2017-07-03 11:30:00 Y_CLIENT[L] = 973ce3c7f41966fa5ef6be7231bc9ccfa6c68512928c9d2b8afac7add44e729b
+2017-07-03 11:30:00 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:30:03 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:30:04 connect() failed after select(): Connection refused
+2017-07-03 11:30:15 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:30:15 connect() failed after select(): Connection refused
+2017-07-03 11:30:18 height : 57
+2017-07-03 11:30:18 Y_CLIENT[L] = 973ce3c7f41966fa5ef6be7231bc9ccfa6c68512928c9d2b8afac7add44e729b
+2017-07-03 11:30:18 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:30:18 nHeightCheckPoW = 57
+2017-07-03 11:30:18 height : 57
+2017-07-03 11:30:18 Y_CLIENT[L] = 973ce3c7f41966fa5ef6be7231bc9ccfa6c68512928c9d2b8afac7add44e729b
+2017-07-03 11:30:19 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:30:32 height : 57
+2017-07-03 11:30:33 Y_CLIENT[L] = 973ce3c7f41966fa5ef6be7231bc9ccfa6c68512928c9d2b8afac7add44e729b
+2017-07-03 11:30:33 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:30:45 height : 57
+2017-07-03 11:30:45 Y_CLIENT[L] = 973ce3c7f41966fa5ef6be7231bc9ccfa6c68512928c9d2b8afac7add44e729b
+2017-07-03 11:30:45 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:30:53 Committing 1 changed transactions to coin database...
+2017-07-03 11:30:54 SetBestChain: new best=26ba2cdad1a0630bdbd611654ac676b3d76bdf7a7c2b983027ab88b7623f962b  height=57  log2_work=20.031631  tx=58  date=2017-07-03 10:45:30 progress=0.948444
+2017-07-03 11:30:54 ProcessBlock: ACCEPTED
+2017-07-03 11:30:55 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:30:56 connect() failed after select(): Connection refused
+2017-07-03 11:31:02 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:31:02 connect() failed after select(): Connection refused
+2017-07-03 11:31:03 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:31:03 connect() failed after select(): Connection refused
+2017-07-03 11:31:04 received block bf6719fabdc33ee8b9776b1653f39ff9c065752d3e44319d0fc2e7fab04f3769
+2017-07-03 11:31:04 I-2
+2017-07-03 11:31:05 nHeightCheckPoW = 58
+2017-07-03 11:31:05 height : 58
+2017-07-03 11:31:06 Y_CLIENT[L] = 1006ba7673ef37a5623313eb2c193ee02e57a4919d3976fb76bfbc591ad51ef1
+2017-07-03 11:31:06 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:31:44 height : 58
+2017-07-03 11:31:45 Y_CLIENT[L] = 1006ba7673ef37a5623313eb2c193ee02e57a4919d3976fb76bfbc591ad51ef1
+2017-07-03 11:31:45 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:31:45 nHeightCheckPoW = 58
+2017-07-03 11:31:45 height : 58
+2017-07-03 11:31:46 Y_CLIENT[L] = 1006ba7673ef37a5623313eb2c193ee02e57a4919d3976fb76bfbc591ad51ef1
+2017-07-03 11:31:47 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:31:49 height : 58
+2017-07-03 11:31:50 Y_CLIENT[L] = 1006ba7673ef37a5623313eb2c193ee02e57a4919d3976fb76bfbc591ad51ef1
+2017-07-03 11:31:50 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:31:51 height : 58
+2017-07-03 11:31:52 Y_CLIENT[L] = 1006ba7673ef37a5623313eb2c193ee02e57a4919d3976fb76bfbc591ad51ef1
+2017-07-03 11:31:52 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:31:55 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:32:19 connect() failed after select(): Connection refused
+2017-07-03 11:32:20 Committing 1 changed transactions to coin database...
+2017-07-03 11:32:20 SetBestChain: new best=bf6719fabdc33ee8b9776b1653f39ff9c065752d3e44319d0fc2e7fab04f3769  height=58  log2_work=20.032642  tx=59  date=2017-07-03 11:04:06 progress=0.967837
+2017-07-03 11:32:20 ProcessBlock: ACCEPTED
+2017-07-03 11:32:20 ResendWalletTransactions()
+2017-07-03 11:34:30 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:34:31 ResendWalletTransactions()
+2017-07-03 11:34:32 connect() failed after select(): Connection refused
+2017-07-03 11:34:42 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:34:43 connect() failed after select(): Connection refused
+2017-07-03 11:34:44 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:34:45 connect() failed after select(): Connection refused
+2017-07-03 11:34:45 received block 4013c9bfc4864d105860d81c01edc746c1fecc82b62170bc84bc8805965e2d79
+2017-07-03 11:34:45 I-2
+2017-07-03 11:34:45 nHeightCheckPoW = 59
+2017-07-03 11:34:45 height : 59
+2017-07-03 11:34:46 Y_CLIENT[L] = b00ec455b288424820cd7325b166b414286377234331aea8160f9a6277f6c350
+2017-07-03 11:34:46 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:35:04 trying connection 96.44.143.98:18168 lastseen=5.3hrs
+2017-07-03 11:35:06 connect() failed after select(): Connection refused
+2017-07-03 11:35:16 trying connection 96.44.143.98:18168 lastseen=5.4hrs
+2017-07-03 11:35:29 connect() failed after select(): Connection refused
+2017-07-03 11:38:19 height : 59
+2017-07-03 11:38:20 Y_CLIENT[L] = b00ec455b288424820cd7325b166b414286377234331aea8160f9a6277f6c350
+2017-07-03 11:38:20 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:38:20 nHeightCheckPoW = 59
+2017-07-03 11:38:20 height : 59
+2017-07-03 11:39:20 trying connection 96.44.143.98:18168 lastseen=5.4hrs
+2017-07-03 11:43:32 Flushed 3 addresses to peers.dat  313ms
+2017-07-03 11:43:32 Y_CLIENT[L] = b00ec455b288424820cd7325b166b414286377234331aea8160f9a6277f6c350
+2017-07-03 11:44:19 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:44:19 connect() failed after select(): Connection refused
+2017-07-03 11:45:01 height : 59
+2017-07-03 11:45:02 Y_CLIENT[L] = b00ec455b288424820cd7325b166b414286377234331aea8160f9a6277f6c350
+2017-07-03 11:45:02 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:48:38 height : 59
+2017-07-03 11:49:31 Y_CLIENT[L] = b00ec455b288424820cd7325b166b414286377234331aea8160f9a6277f6c350
+2017-07-03 11:49:32 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:49:33 trying connection 96.44.143.98:18168 lastseen=5.6hrs
+2017-07-03 11:49:34 connect() failed after select(): Connection refused
+2017-07-03 11:49:35 Committing 1 changed transactions to coin database...
+2017-07-03 11:49:35 SetBestChain: new best=4013c9bfc4864d105860d81c01edc746c1fecc82b62170bc84bc8805965e2d79  height=59  log2_work=20.033652  tx=60  date=2017-07-03 11:21:37 progress=0.968646
+2017-07-03 11:49:36 ProcessBlock: ACCEPTED
+2017-07-03 11:49:37 ResendWalletTransactions()
+2017-07-03 11:49:46 trying connection 96.44.143.98:18168 lastseen=5.6hrs
+2017-07-03 11:49:46 connect() failed after select(): Connection refused
+2017-07-03 11:49:49 received block b6bb4d7ad130e9f51e92b57ac68b767b0c87f4002cf91193e22625b1cea07fa6
+2017-07-03 11:49:51 I-2
+2017-07-03 11:49:51 nHeightCheckPoW = 60
+2017-07-03 11:49:51 height : 60
+2017-07-03 11:49:52 Y_CLIENT[L] = e231814bb1a098f1af4c30aa13a5c5c55d75a7bb2772e82ffaa13bc184b5fdac
+2017-07-03 11:49:52 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:49:52 Difficulty Retarget - Boris's Ridiculously Named Difficulty Function
+2017-07-03 11:49:52 nHeight = 59
+2017-07-03 11:49:53 trying connection 96.44.143.98:18168 lastseen=5.6hrs
+2017-07-03 11:50:00 nPastBlocks = 59
+2017-07-03 11:50:00 nBlockTimeRatio Target/Actual = 2.1905
+2017-07-03 11:50:01 connect() failed after select(): Connection refused
+2017-07-03 11:50:01 Mean blocktime = 273.9s
+2017-07-03 11:50:02 SlowBlocksLimit = 0.3206
+2017-07-03 11:50:03 FastBlocksLimit = 3.1191
+2017-07-03 11:50:03 Before: 1f57321b 0.00000017
+2017-07-03 11:50:04 After: 1f4f9d37 0.00000019
+2017-07-03 11:50:04 Ratio After/Before: 1.09522939
+2017-07-03 11:50:08 trying connection 96.44.143.98:18168 lastseen=5.6hrs
+2017-07-03 11:50:08 connect() failed after select(): Connection refused
+2017-07-03 11:50:11 trying connection 96.44.143.98:18168 lastseen=5.6hrs
+2017-07-03 11:50:12 connect() failed after select(): Connection refused
+2017-07-03 11:51:16 trying connection 96.44.143.98:18168 lastseen=5.6hrs
+2017-07-03 11:51:16 connect() failed after select(): Connection refused
+2017-07-03 11:51:18 height : 60
+2017-07-03 11:51:18 Y_CLIENT[L] = e231814bb1a098f1af4c30aa13a5c5c55d75a7bb2772e82ffaa13bc184b5fdac
+2017-07-03 11:51:19 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:51:19 nHeightCheckPoW = 60
+2017-07-03 11:51:19 height : 60
+2017-07-03 11:51:20 Y_CLIENT[L] = e231814bb1a098f1af4c30aa13a5c5c55d75a7bb2772e82ffaa13bc184b5fdac
+2017-07-03 11:52:24 trying connection 96.44.143.98:18168 lastseen=5.6hrs
+2017-07-03 11:52:25 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 11:52:30 connect() failed after select(): Connection refused
+2017-07-03 11:54:08 trying connection 96.44.143.98:18168 lastseen=5.7hrs
+2017-07-03 11:54:09 connect() failed after select(): Connection refused
+2017-07-03 11:54:10 trying connection 96.44.143.98:18168 lastseen=5.7hrs
+2017-07-03 11:54:22 connect() failed after select(): Connection refused
+2017-07-03 11:56:16 trying connection 96.44.143.98:18168 lastseen=5.7hrs
+2017-07-03 11:58:17 connect() failed after select(): Connection refused
+2017-07-03 12:00:10 Flushed 3 addresses to peers.dat  44456ms
+2017-07-03 12:04:43 trying connection 96.44.143.98:18168 lastseen=5.8hrs
+2017-07-03 12:04:44 connect() failed after select(): Connection refused
+2017-07-03 12:06:42 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:06:42 height : 60
+2017-07-03 12:06:43 connect() failed after select(): Connection refused
+2017-07-03 12:06:47 Y_CLIENT[L] = e231814bb1a098f1af4c30aa13a5c5c55d75a7bb2772e82ffaa13bc184b5fdac
+2017-07-03 12:06:47 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:06:48 height : 60
+2017-07-03 12:06:55 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:06:56 connect() failed after select(): Connection refused
+2017-07-03 12:06:58 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:07:01 connect() failed after select(): Connection refused
+2017-07-03 12:07:03 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:07:04 connect() failed after select(): Connection refused
+2017-07-03 12:07:06 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:07:07 connect() failed after select(): Connection refused
+2017-07-03 12:07:09 Y_CLIENT[L] = e231814bb1a098f1af4c30aa13a5c5c55d75a7bb2772e82ffaa13bc184b5fdac
+2017-07-03 12:07:11 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:07:15 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:07:18 connect() failed after select(): Connection refused
+2017-07-03 12:07:33 Committing 1 changed transactions to coin database...
+2017-07-03 12:07:37 SetBestChain: new best=b6bb4d7ad130e9f51e92b57ac68b767b0c87f4002cf91193e22625b1cea07fa6  height=60  log2_work=20.034757  tx=61  date=2017-07-03 11:25:13 progress=0.953953
+2017-07-03 12:07:38 ProcessBlock: ACCEPTED
+2017-07-03 12:07:39 ResendWalletTransactions()
+2017-07-03 12:07:39 getblocks -1 to 0000000000000000000000000000000000000000000000000000000000000000 limit 2500
+2017-07-03 12:07:40 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:07:49 connect() failed after select(): Connection refused
+2017-07-03 12:08:16 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:08:16 connect() failed after select(): Connection refused
+2017-07-03 12:08:17 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:08:17 connect() failed after select(): Connection refused
+2017-07-03 12:08:28 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:08:28 connect() failed after select(): Connection refused
+2017-07-03 12:08:49 Y[L] = 3daf1ca7524bb53d0573e60a56bf068f2b454cf6ebc166e73d0e0fe45b8ee75f
+2017-07-03 12:08:56 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:08:57 connect() failed after select(): Connection refused
+2017-07-03 12:08:59 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:08:59 connect() failed after select(): Connection refused
+2017-07-03 12:09:04 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:09:05 connect() failed after select(): Connection refused
+2017-07-03 12:09:16 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:09:16 connect() failed after select(): Connection refused
+2017-07-03 12:09:23 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:09:24 connect() failed after select(): Connection refused
+2017-07-03 12:09:24 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:09:25 connect() failed after select(): Connection refused
+2017-07-03 12:09:27 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:09:27 connect() failed after select(): Connection refused
+2017-07-03 12:09:30 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:09:30 connect() failed after select(): Connection refused
+2017-07-03 12:09:36 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:09:36 connect() failed after select(): Connection refused
+2017-07-03 12:09:46 Case 2 
+2017-07-03 12:09:46 mtp_hash input = , hashTarget = 0
+2017-07-03 12:09:46 1. Validate all inputs 
+2017-07-03 12:09:46 2. Align memory size 
+2017-07-03 12:09:46 2.1 memory_blocks = 2097152
+2017-07-03 12:09:46 2.2 segment_length = 131072
+2017-07-03 12:09:46 2.3 memory_blocks = 2097152
+2017-07-03 12:09:46 3. Initialization: Hashing inputs, allocating memory, filling first blocks
+2017-07-03 12:10:29 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:10:29 4. Filling memory 
+2017-07-03 12:10:49 connect() failed after select(): Connection refused
+2017-07-03 12:11:06 trying connection 96.44.143.98:18168 lastseen=5.9hrs
+2017-07-03 12:11:07 connect() failed after select(): Connection refused
+2017-07-03 12:11:32 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:11:33 connect() failed after select(): Connection refused
+2017-07-03 12:12:11 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:12:13 connect() failed after select(): Connection refused
+2017-07-03 12:12:20 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:12:21 connect() failed after select(): Connection refused
+2017-07-03 12:12:26 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:12:26 connect() failed after select(): Connection refused
+2017-07-03 12:12:55 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:12:56 connect() failed after select(): Connection refused
+2017-07-03 12:13:04 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:13:08 connect() failed after select(): Connection refused
+2017-07-03 12:13:14 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:13:16 connect() failed after select(): Connection refused
+2017-07-03 12:13:32 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:13:33 connect() failed after select(): Connection refused
+2017-07-03 12:13:40 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:13:41 connect() failed after select(): Connection refused
+2017-07-03 12:13:55 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:13:56 connect() failed after select(): Connection refused
+2017-07-03 12:14:02 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:14:20 connect() failed after select(): Connection refused
+2017-07-03 12:15:56 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:15:56 connect() failed after select(): Connection refused
+2017-07-03 12:16:05 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:16:05 connect() failed after select(): Connection refused
+2017-07-03 12:16:07 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:16:08 connect() failed after select(): Connection refused
+2017-07-03 12:16:17 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:16:17 connect() failed after select(): Connection refused
+2017-07-03 12:16:19 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:16:20 connect() failed after select(): Connection refused
+2017-07-03 12:16:35 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:16:36 connect() failed after select(): Connection refused
+2017-07-03 12:16:38 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:16:39 connect() failed after select(): Connection refused
+2017-07-03 12:16:53 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:16:53 connect() failed after select(): Connection refused
+2017-07-03 12:17:00 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:17:02 connect() failed after select(): Connection refused
+2017-07-03 12:17:11 trying connection 96.44.143.98:18168 lastseen=6.0hrs
+2017-07-03 12:17:12 connect() failed after select(): Connection refused
+2017-07-03 12:17:27 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:17:28 connect() failed after select(): Connection refused
+2017-07-03 12:17:29 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:17:29 connect() failed after select(): Connection refused
+2017-07-03 12:17:49 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:19:44 connect() failed after select(): Connection refused
+2017-07-03 12:19:45 Flushed 3 addresses to peers.dat  379ms
+2017-07-03 12:19:49 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:19:50 connect() failed after select(): Connection refused
+2017-07-03 12:20:02 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:04 connect() failed after select(): Connection refused
+2017-07-03 12:20:07 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:08 connect() failed after select(): Connection refused
+2017-07-03 12:20:09 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:10 connect() failed after select(): Connection refused
+2017-07-03 12:20:12 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:13 connect() failed after select(): Connection refused
+2017-07-03 12:20:19 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:19 connect() failed after select(): Connection refused
+2017-07-03 12:20:20 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:21 connect() failed after select(): Connection refused
+2017-07-03 12:20:23 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:23 connect() failed after select(): Connection refused
+2017-07-03 12:20:26 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:27 connect() failed after select(): Connection refused
+2017-07-03 12:20:31 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:32 connect() failed after select(): Connection refused
+2017-07-03 12:20:53 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:55 connect() failed after select(): Connection refused
+2017-07-03 12:20:58 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:20:59 connect() failed after select(): Connection refused
+2017-07-03 12:21:15 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:21:18 connect() failed after select(): Connection refused
+2017-07-03 12:21:22 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:21:24 connect() failed after select(): Connection refused
+2017-07-03 12:21:31 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:21:32 connect() failed after select(): Connection refused
+2017-07-03 12:21:36 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:21:37 connect() failed after select(): Connection refused
+2017-07-03 12:22:06 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:22:06 connect() failed after select(): Connection refused
+2017-07-03 12:22:09 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:22:10 connect() failed after select(): Connection refused
+2017-07-03 12:22:16 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:22:21 connect() failed after select(): Connection refused
+2017-07-03 12:22:27 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:22:28 connect() failed after select(): Connection refused
+2017-07-03 12:22:37 trying connection 96.44.143.98:18168 lastseen=6.1hrs
+2017-07-03 12:23:35 connect() failed after select(): Connection refused
+2017-07-03 12:23:35 socket recv error 110
+2017-07-03 12:23:36 disconnecting node 52.232.105.188:18168
+2017-07-03 12:24:22 trying connection 52.232.105.188:18168 lastseen=0.3hrs
+2017-07-03 12:24:23 connected 52.232.105.188:18168
+2017-07-03 12:24:23 send version message: version 90021, blocks=60, us=52.187.176.170:18168, them=52.232.105.188:18168, peer=52.232.105.188:18168
+2017-07-03 12:24:26 receive version message: /Satoshi:0.8.8/: version 90021, blocks=65, us=52.187.176.170:59102, them=52.232.105.188:18168, peer=52.232.105.188:18168
+2017-07-03 12:24:29 trying connection 96.44.143.98:18168 lastseen=6.2hrs
+2017-07-03 12:24:31 connect() failed after select(): Connection refused
+2017-07-03 12:24:47 trying connection 96.44.143.98:18168 lastseen=2.2hrs
+2017-07-03 12:24:50 received block 91e2678604469034f8ae9227a179174e366a6906adbb72678e6de62a57b21300
+2017-07-03 12:24:52 connect() failed after select(): Connection refused
+2017-07-03 12:24:53 I-2
+2017-07-03 12:26:10 nHeightCheckPoW = 61
+2017-07-03 12:26:11 height : 61
+2017-07-03 12:26:12 Y_CLIENT[L] = 86960cd74ba7552efad40d14021fcdac95380751c012299dc1c50bca6c2813c5
+2017-07-03 12:26:12 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:27:58 trying connection 96.44.143.98:18168 lastseen=2.3hrs
+2017-07-03 12:27:59 connect() failed after select(): Connection refused
+2017-07-03 12:28:01 trying connection 96.44.143.98:18168 lastseen=2.3hrs
+2017-07-03 12:28:01 connect() failed after select(): Connection refused
+2017-07-03 12:28:02 trying connection 96.44.143.98:18168 lastseen=2.3hrs
+2017-07-03 12:28:10 connect() failed after select(): Connection refused
+2017-07-03 12:29:45 trying connection 96.44.143.98:18168 lastseen=2.3hrs
+2017-07-03 12:29:46 connect() failed after select(): Connection refused
+2017-07-03 12:29:47 trying connection 96.44.143.98:18168 lastseen=2.3hrs
+2017-07-03 12:29:48 connect() failed after select(): Connection refused
+2017-07-03 12:30:17 trying connection 96.44.143.98:18168 lastseen=2.3hrs
+2017-07-03 12:30:17 connect() failed after select(): Connection refused
+2017-07-03 12:30:21 height : 61
+2017-07-03 12:30:22 Y_CLIENT[L] = 86960cd74ba7552efad40d14021fcdac95380751c012299dc1c50bca6c2813c5
+2017-07-03 12:31:27 trying connection 96.44.143.98:18168 lastseen=2.3hrs
+2017-07-03 12:31:30 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:31:30 connect() failed after select(): Connection refused
+2017-07-03 12:31:32 nHeightCheckPoW = 61
+2017-07-03 12:31:32 height : 61
+2017-07-03 12:31:33 Y_CLIENT[L] = 86960cd74ba7552efad40d14021fcdac95380751c012299dc1c50bca6c2813c5
+2017-07-03 12:31:33 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:34:54 Flushed 3 addresses to peers.dat  1129ms
+2017-07-03 12:35:05 trying connection 96.44.143.98:18168 lastseen=2.4hrs
+2017-07-03 12:35:05 connect() failed after select(): Connection refused
+2017-07-03 12:35:10 height : 61
+2017-07-03 12:35:13 Y_CLIENT[L] = 86960cd74ba7552efad40d14021fcdac95380751c012299dc1c50bca6c2813c5
+2017-07-03 12:35:13 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:35:13 trying connection 96.44.143.98:18168 lastseen=2.4hrs
+2017-07-03 12:35:14 connect() failed after select(): Connection refused
+2017-07-03 12:35:16 trying connection 96.44.143.98:18168 lastseen=2.4hrs
+2017-07-03 12:35:19 connect() failed after select(): Connection refused
+2017-07-03 12:37:39 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:37:39 height : 61
+2017-07-03 12:37:40 connect() failed after select(): Connection refused
+2017-07-03 12:37:40 Y_CLIENT[L] = 86960cd74ba7552efad40d14021fcdac95380751c012299dc1c50bca6c2813c5
+2017-07-03 12:37:41 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:37:43 Committing 1 changed transactions to coin database...
+2017-07-03 12:37:43 SetBestChain: new best=91e2678604469034f8ae9227a179174e366a6906adbb72678e6de62a57b21300  height=61  log2_work=20.035862  tx=62  date=2017-07-03 11:32:43 progress=0.932136
+2017-07-03 12:37:44 ProcessBlock: ACCEPTED
+2017-07-03 12:37:45 ResendWalletTransactions()
+2017-07-03 12:37:46 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:37:47 connect() failed after select(): Connection refused
+2017-07-03 12:37:48 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:37:50 connect() failed after select(): Connection refused
+2017-07-03 12:37:57 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:38:05 received block 39bfc4762b2db4b29e1cf6f49ded607266909a3f3b8363b239cb7fb9bd6ef4d3
+2017-07-03 12:38:08 connect() failed after select(): Connection refused
+2017-07-03 12:38:13 I-2
+2017-07-03 12:38:15 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:38:15 nHeightCheckPoW = 62
+2017-07-03 12:38:15 height : 62
+2017-07-03 12:38:16 Y_CLIENT[L] = f13ad510d2372de10ef9f2a812e981daf0abd428abfaf3a9514cd6e75348e00f
+2017-07-03 12:38:16 connect() failed after select(): Connection refused
+2017-07-03 12:38:16 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:38:18 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:38:18 connect() failed after select(): Connection refused
+2017-07-03 12:38:20 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:38:21 connect() failed after select(): Connection refused
+2017-07-03 12:38:24 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:38:25 connect() failed after select(): Connection refused
+2017-07-03 12:38:27 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:38:28 connect() failed after select(): Connection refused
+2017-07-03 12:39:04 height : 62
+2017-07-03 12:39:05 Y_CLIENT[L] = f13ad510d2372de10ef9f2a812e981daf0abd428abfaf3a9514cd6e75348e00f
+2017-07-03 12:39:06 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:39:06 nHeightCheckPoW = 62
+2017-07-03 12:39:06 height : 62
+2017-07-03 12:39:07 Y_CLIENT[L] = f13ad510d2372de10ef9f2a812e981daf0abd428abfaf3a9514cd6e75348e00f
+2017-07-03 12:39:07 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:39:07 height : 62
+2017-07-03 12:39:07 Y_CLIENT[L] = f13ad510d2372de10ef9f2a812e981daf0abd428abfaf3a9514cd6e75348e00f
+2017-07-03 12:39:07 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:39:07 height : 62
+2017-07-03 12:39:08 Y_CLIENT[L] = f13ad510d2372de10ef9f2a812e981daf0abd428abfaf3a9514cd6e75348e00f
+2017-07-03 12:39:08 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:39:09 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:39:28 connect() failed after select(): Connection refused
+2017-07-03 12:39:56 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:39:56 connect() failed after select(): Connection refused
+2017-07-03 12:39:57 Committing 1 changed transactions to coin database...
+2017-07-03 12:39:57 SetBestChain: new best=39bfc4762b2db4b29e1cf6f49ded607266909a3f3b8363b239cb7fb9bd6ef4d3  height=62  log2_work=20.036966  tx=63  date=2017-07-03 11:33:46 progress=0.932007
+2017-07-03 12:39:57 ProcessBlock: ACCEPTED
+2017-07-03 12:40:00 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:40:00 connect() failed after select(): Connection refused
+2017-07-03 12:40:09 received block 65bddfc9e2dce49cad25f5e8435028f5d6a65a926fbdf8d830beaca6e9fbe3a5
+2017-07-03 12:40:09 I-2
+2017-07-03 12:40:09 nHeightCheckPoW = 63
+2017-07-03 12:40:09 height : 63
+2017-07-03 12:40:10 Y_CLIENT[L] = 822f3fc3c84352ec1ebeeceda28da0127cc36f262ba3e308f50c0c86b3d3fcb9
+2017-07-03 12:40:10 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:40:12 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:40:39 connect() failed after select(): Connection refused
+2017-07-03 12:41:56 trying connection 96.44.143.98:18168 lastseen=2.5hrs
+2017-07-03 12:41:56 connect() failed after select(): Connection refused
+2017-07-03 12:41:57 height : 63
+2017-07-03 12:43:29 Y_CLIENT[L] = 822f3fc3c84352ec1ebeeceda28da0127cc36f262ba3e308f50c0c86b3d3fcb9
+2017-07-03 12:43:29 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:43:29 nHeightCheckPoW = 63
+2017-07-03 12:43:29 height : 63
+2017-07-03 12:43:29 Y_CLIENT[L] = 822f3fc3c84352ec1ebeeceda28da0127cc36f262ba3e308f50c0c86b3d3fcb9
+2017-07-03 12:43:29 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:43:30 trying connection 96.44.143.98:18168 lastseen=2.6hrs
+2017-07-03 12:43:30 height : 63
+2017-07-03 12:43:30 Y_CLIENT[L] = 822f3fc3c84352ec1ebeeceda28da0127cc36f262ba3e308f50c0c86b3d3fcb9
+2017-07-03 12:45:10 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:45:10 connect() failed after select(): Connection refused
+2017-07-03 12:45:10 trying connection 96.44.143.98:18168 lastseen=2.6hrs
+2017-07-03 12:45:11 height : 63
+2017-07-03 12:45:11 Y_CLIENT[L] = 822f3fc3c84352ec1ebeeceda28da0127cc36f262ba3e308f50c0c86b3d3fcb9
+2017-07-03 12:45:11 connect() failed after select(): Connection refused
+2017-07-03 12:45:12 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:45:14 Committing 1 changed transactions to coin database...
+2017-07-03 12:45:14 SetBestChain: new best=65bddfc9e2dce49cad25f5e8435028f5d6a65a926fbdf8d830beaca6e9fbe3a5  height=63  log2_work=20.03807  tx=64  date=2017-07-03 11:36:35 progress=0.930674
+2017-07-03 12:45:15 ProcessBlock: ACCEPTED
+2017-07-03 12:49:56 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:49:56 Flushed 3 addresses to peers.dat  1608ms
+2017-07-03 12:49:57 connect() failed after select(): Connection refused
+2017-07-03 12:50:00 received block 6266629c67ce841d63ebb7b20401fa68fda27b22693b565ea7245061d4f7d953
+2017-07-03 12:50:01 I-2
+2017-07-03 12:50:01 nHeightCheckPoW = 64
+2017-07-03 12:50:01 height : 64
+2017-07-03 12:50:02 Y_CLIENT[L] = 5dade0ba2b9c3820ff1f2648846d9dcb2e4e36fbcff069d0e73f546716bdfe78
+2017-07-03 12:50:02 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:50:05 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:50:05 connect() failed after select(): Connection refused
+2017-07-03 12:50:07 height : 64
+2017-07-03 12:50:08 Y_CLIENT[L] = 5dade0ba2b9c3820ff1f2648846d9dcb2e4e36fbcff069d0e73f546716bdfe78
+2017-07-03 12:50:08 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:50:08 nHeightCheckPoW = 64
+2017-07-03 12:50:08 height : 64
+2017-07-03 12:50:13 Y_CLIENT[L] = 5dade0ba2b9c3820ff1f2648846d9dcb2e4e36fbcff069d0e73f546716bdfe78
+2017-07-03 12:50:18 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:50:18 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:51:53 height : 64
+2017-07-03 12:51:54 Y_CLIENT[L] = 5dade0ba2b9c3820ff1f2648846d9dcb2e4e36fbcff069d0e73f546716bdfe78
+2017-07-03 12:51:54 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:51:54 height : 64
+2017-07-03 12:51:55 Y_CLIENT[L] = 5dade0ba2b9c3820ff1f2648846d9dcb2e4e36fbcff069d0e73f546716bdfe78
+2017-07-03 12:51:55 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:51:57 connect() failed after select(): Connection refused
+2017-07-03 12:52:04 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:52:08 Committing 1 changed transactions to coin database...
+2017-07-03 12:52:08 SetBestChain: new best=6266629c67ce841d63ebb7b20401fa68fda27b22693b565ea7245061d4f7d953  height=64  log2_work=20.039172  tx=65  date=2017-07-03 11:37:17 progress=0.925953
+2017-07-03 12:52:33 ProcessBlock: ACCEPTED
+2017-07-03 12:52:33 ResendWalletTransactions()
+2017-07-03 12:52:33 connect() failed after select(): Connection refused
+2017-07-03 12:53:03 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:53:14 connect() failed after select(): Connection refused
+2017-07-03 12:53:18 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:53:19 connect() failed after select(): Connection refused
+2017-07-03 12:53:50 received block e35eebd6d8c380de7cd9d71719705850a0f181a8471e16dda2c9409154264562
+2017-07-03 12:53:50 I-2
+2017-07-03 12:53:50 nHeightCheckPoW = 65
+2017-07-03 12:53:50 height : 65
+2017-07-03 12:53:51 Y_CLIENT[L] = 85385131869cec0b493832eaf2ba480c18b2154eae47485db821fd01c61ee4da
+2017-07-03 12:53:51 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:53:51 Y[L] = c80d2291cb20d1ba7d6b2573f4e1e0c908c4bc0c446974f7d31aca76618887e8
+2017-07-03 12:53:54 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:53:55 connect() failed after select(): Connection refused
+2017-07-03 12:54:23 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:54:25 height : 65
+2017-07-03 12:54:26 Y_CLIENT[L] = 85385131869cec0b493832eaf2ba480c18b2154eae47485db821fd01c61ee4da
+2017-07-03 12:54:26 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:54:26 connect() failed after select(): Connection refused
+2017-07-03 12:54:26 nHeightCheckPoW = 65
+2017-07-03 12:54:26 height : 65
+2017-07-03 12:54:27 Y_CLIENT[L] = 85385131869cec0b493832eaf2ba480c18b2154eae47485db821fd01c61ee4da
+2017-07-03 12:54:27 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:54:27 height : 65
+2017-07-03 12:54:28 Y_CLIENT[L] = 85385131869cec0b493832eaf2ba480c18b2154eae47485db821fd01c61ee4da
+2017-07-03 12:54:32 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:54:32 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:54:32 height : 65
+2017-07-03 12:54:33 connect() failed after select(): Connection refused
+2017-07-03 12:54:34 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:54:37 Y_CLIENT[L] = 85385131869cec0b493832eaf2ba480c18b2154eae47485db821fd01c61ee4da
+2017-07-03 12:54:37 ERROR: CheckProofOfWork() : proof of work failed - mtp
+2017-07-03 12:54:37 connect() failed after select(): Connection refused
+2017-07-03 12:54:39 Committing 1 changed transactions to coin database...
+2017-07-03 12:54:39 SetBestChain: new best=e35eebd6d8c380de7cd9d71719705850a0f181a8471e16dda2c9409154264562  height=65  log2_work=20.040274  tx=66  date=2017-07-03 11:38:24 progress=0.925729
+2017-07-03 12:54:39 ProcessBlock: ACCEPTED
+2017-07-03 12:54:48 Case 2 
+2017-07-03 12:54:48 trying connection 96.44.143.98:18168 lastseen=2.7hrs
+2017-07-03 12:54:48 mtp_hash input = , hashTarget = 0
+2017-07-03 12:54:48 1. Validate all inputs 
+2017-07-03 12:54:48 2. Align memory size 
+2017-07-03 12:54:48 2.1 memory_blocks = 2097152
+2017-07-03 12:54:48 2.2 segment_length = 131072
+2017-07-03 12:54:48 2.3 memory_blocks = 2097152
+2017-07-03 12:54:48 3. Initialization: Hashing inputs, allocating memory, filling first blocks
+2017-07-03 12:55:30 connect() failed after select(): Connection refused
+2017-07-03 12:55:30 4. Filling memory 
+2017-07-03 12:55:44 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 12:55:44 connect() failed after select(): Connection refused
+2017-07-03 12:57:35 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 12:57:38 connect() failed after select(): Connection refused
+2017-07-03 12:57:39 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 12:57:40 connect() failed after select(): Connection refused
+2017-07-03 12:59:25 ResendWalletTransactions()
+2017-07-03 12:59:34 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 12:59:36 connect() failed after select(): Connection refused
+2017-07-03 12:59:47 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 12:59:50 connect() failed after select(): Connection refused
+2017-07-03 13:00:10 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:00:10 connect() failed after select(): Connection refused
+2017-07-03 13:00:22 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:00:23 connect() failed after select(): Connection refused
+2017-07-03 13:00:27 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:00:29 connect() failed after select(): Connection refused
+2017-07-03 13:00:31 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:00:31 connect() failed after select(): Connection refused
+2017-07-03 13:00:33 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:00:34 connect() failed after select(): Connection refused
+2017-07-03 13:00:35 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:00:36 connect() failed after select(): Connection refused
+2017-07-03 13:00:53 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:00:54 connect() failed after select(): Connection refused
+2017-07-03 13:00:55 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:00:56 connect() failed after select(): Connection refused
+2017-07-03 13:01:12 trying connection 96.44.143.98:18168 lastseen=2.8hrs
+2017-07-03 13:01:18 connect() failed after select(): Connection refused
+2017-07-03 13:01:36 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:01:40 connect() failed after select(): Connection refused
+2017-07-03 13:01:41 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:01:42 connect() failed after select(): Connection refused
+2017-07-03 13:02:03 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:02:04 connect() failed after select(): Connection refused
+2017-07-03 13:02:06 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:02:10 connect() failed after select(): Connection refused
+2017-07-03 13:03:05 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:05:26 connect() failed after select(): Connection refused
+2017-07-03 13:05:26 Flushed 3 addresses to peers.dat  128ms
+2017-07-03 13:05:28 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:05:29 connect() failed after select(): Connection refused
+2017-07-03 13:05:47 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:05:48 connect() failed after select(): Connection refused
+2017-07-03 13:06:14 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:06:16 connect() failed after select(): Connection refused
+2017-07-03 13:06:25 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:06:26 connect() failed after select(): Connection refused
+2017-07-03 13:06:27 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:06:28 connect() failed after select(): Connection refused
+2017-07-03 13:06:34 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:06:35 connect() failed after select(): Connection refused
+2017-07-03 13:06:39 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:06:39 connect() failed after select(): Connection refused
+2017-07-03 13:06:46 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:06:47 connect() failed after select(): Connection refused
+2017-07-03 13:06:51 trying connection 96.44.143.98:18168 lastseen=2.9hrs
+2017-07-03 13:06:52 connect() failed after select(): Connection refused
+2017-07-03 13:11:00 trying connection 96.44.143.98:18168 lastseen=3.0hrs
+2017-07-03 13:11:01 connect() failed after select(): Connection refused
+2017-07-03 13:11:09 trying connection 96.44.143.98:18168 lastseen=3.0hrs
+2017-07-03 13:11:10 connect() failed after select(): Connection refused
+2017-07-03 13:11:11 trying connection 96.44.143.98:18168 lastseen=3.0hrs
+2017-07-03 13:11:12 connect() failed after select(): Connection refused
+2017-07-03 13:11:15 trying connection 96.44.143.98:18168 lastseen=3.0hrs
+2017-07-03 13:11:16 connect() failed after select(): Connection refused
+2017-07-03 13:13:26 trying connection 96.44.143.98:18168 lastseen=3.0hrs
+2017-07-03 13:13:26 connect() failed after select(): Connection refused
+2017-07-03 13:13:44 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:14:15 connect() failed after select(): Connection refused
+2017-07-03 13:14:24 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:14:25 connect() failed after select(): Connection refused
+2017-07-03 13:14:31 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:14:32 connect() failed after select(): Connection refused
+2017-07-03 13:14:34 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:14:34 connect() failed after select(): Connection refused
+2017-07-03 13:14:38 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:14:39 connect() failed after select(): Connection refused
+2017-07-03 13:14:46 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:14:47 connect() failed after select(): Connection refused
+2017-07-03 13:14:52 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:14:52 connect() failed after select(): Connection refused
+2017-07-03 13:15:06 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:15:07 connect() failed after select(): Connection refused
+2017-07-03 13:16:03 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:16:09 connect() failed after select(): Connection refused
+2017-07-03 13:16:58 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:17:04 connect() failed after select(): Connection refused
+2017-07-03 13:17:07 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:17:08 connect() failed after select(): Connection refused
+2017-07-03 13:17:38 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:17:38 connect() failed after select(): Connection refused
+2017-07-03 13:17:56 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:17:57 connect() failed after select(): Connection refused
+2017-07-03 13:18:01 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:18:01 connect() failed after select(): Connection refused
+2017-07-03 13:18:05 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:18:05 connect() failed after select(): Connection refused
+2017-07-03 13:18:19 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:18:21 connect() failed after select(): Connection refused
+2017-07-03 13:18:49 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:18:50 connect() failed after select(): Connection refused
+2017-07-03 13:18:52 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:18:55 connect() failed after select(): Connection refused
+2017-07-03 13:19:03 trying connection 96.44.143.98:18168 lastseen=3.1hrs
+2017-07-03 13:19:07 connect() failed after select(): Connection refused
+2017-07-03 13:19:40 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:19:41 connect() failed after select(): Connection refused
+2017-07-03 13:19:48 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:19:51 connect() failed after select(): Connection refused
+2017-07-03 13:20:24 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:20:25 connect() failed after select(): Connection refused
+2017-07-03 13:20:28 Flushed 3 addresses to peers.dat  1529ms
+2017-07-03 13:20:32 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:20:32 connect() failed after select(): Connection refused
+2017-07-03 13:20:38 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:20:39 connect() failed after select(): Connection refused
+2017-07-03 13:20:44 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:20:48 connect() failed after select(): Connection refused
+2017-07-03 13:20:56 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:21:03 connect() failed after select(): Connection refused
+2017-07-03 13:21:50 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:21:51 connect() failed after select(): Connection refused
+2017-07-03 13:22:41 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:22:42 connect() failed after select(): Connection refused
+2017-07-03 13:22:43 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:22:44 connect() failed after select(): Connection refused
+2017-07-03 13:22:48 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:22:49 connect() failed after select(): Connection refused
+2017-07-03 13:22:50 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:22:57 connect() failed after select(): Connection refused
+2017-07-03 13:23:04 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:23:06 connect() failed after select(): Connection refused
+2017-07-03 13:23:20 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:23:30 connect() failed after select(): Connection refused
+2017-07-03 13:23:49 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:23:49 connect() failed after select(): Connection refused
+2017-07-03 13:24:27 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:24:28 connect() failed after select(): Connection refused
+2017-07-03 13:24:39 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:24:39 connect() failed after select(): Connection refused
+2017-07-03 13:24:46 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:24:47 connect() failed after select(): Connection refused
+2017-07-03 13:24:57 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:24:58 connect() failed after select(): Connection refused
+2017-07-03 13:25:02 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:25:03 connect() failed after select(): Connection refused
+2017-07-03 13:25:04 trying connection 96.44.143.98:18168 lastseen=3.2hrs
+2017-07-03 13:25:05 connect() failed after select(): Connection refused
+2017-07-03 13:25:49 trying connection 96.44.143.98:18168 lastseen=3.3hrs
+2017-07-03 13:25:50 connect() failed after select(): Connection refused
+2017-07-03 13:25:53 trying connection 96.44.143.98:18168 lastseen=3.3hrs
+2017-07-03 13:25:54 connect() failed after select(): Connection refused
+2017-07-03 13:29:24 ThreadRPCServer method=stop
+2017-07-03 13:29:24 net thread interrupt
+2017-07-03 13:36:35 opencon thread interrupt
+2017-07-03 13:36:35 addcon thread interrupt
+2017-07-03 13:36:35 dumpaddr thread stop
+2017-07-03 13:36:35 Shutdown : In progress...
+2017-07-03 13:36:35 msghand thread interrupt
+2017-07-03 13:37:18 Flush(false)
+2017-07-03 13:37:46 wallet.dat refcount=0
+2017-07-03 13:37:51 wallet.dat checkpoint
+2017-07-03 13:38:40 Y[L] = 997d859cfbc858a07887f027f525fcd5278da630ab1208c074a3a06c54a3b058
+2017-07-03 13:38:43 wallet.dat detach
+2017-07-03 13:39:18 wallet.dat closed
+2017-07-03 13:39:33 DBFlush(false) ended          134680ms
+2017-07-03 13:39:33 StopNode()
+2017-07-03 13:39:33 Case 2 
+2017-07-03 13:39:33 mtp_hash input = , hashTarget = 0
+2017-07-03 13:39:33 1. Validate all inputs 
+2017-07-03 13:39:33 2. Align memory size 
+2017-07-03 13:39:33 2.1 memory_blocks = 2097152
+2017-07-03 13:39:33 2.2 segment_length = 131072
+2017-07-03 13:39:33 2.3 memory_blocks = 2097152
+2017-07-03 13:39:33 3. Initialization: Hashing inputs, allocating memory, filling first blocks
+2017-07-03 13:40:14 4. Filling memory 
+2017-07-03 13:42:50 Flushed 3 addresses to peers.dat  142147ms
+2017-07-03 13:44:56 Committing 0 changed transactions to coin database...
+2017-07-03 13:46:58 Flush(true)
+2017-07-03 13:46:58 wallet.dat refcount=0
+2017-07-03 13:46:58 wallet.dat checkpoint
+2017-07-03 13:46:58 wallet.dat detach
+2017-07-03 13:47:15 wallet.dat closed
+2017-07-03 13:47:15 DBFlush(true) ended           17704ms
+2017-07-03 13:54:07 Shutdown : done
