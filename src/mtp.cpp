@@ -5,7 +5,8 @@
 #include "libmerkletree/merkletree.hpp"
 
 static const uint8_t L = 70;
-static const unsigned int memory_cost = 2097152;
+//static const unsigned int memory_cost = 2097152; // 2GB
+static const unsigned int memory_cost = 262144; //250mb
 
 static void store_block(void *output, const block *src) {
     unsigned i;
@@ -209,13 +210,18 @@ int argon2_ctx(argon2_context *context, argon2_instance_t *instance) {
     /* Minimum memory_blocks = 8L blocks, where L is the number of lanes */
     memory_blocks = context->m_cost;
 
+    printf("2.1 memory_blocks = %d\n", memory_blocks);
+
     if (memory_blocks < 2 * ARGON2_SYNC_POINTS * context->lanes) {
         memory_blocks = 2 * ARGON2_SYNC_POINTS * context->lanes;
     }
 
     segment_length = memory_blocks / (context->lanes * ARGON2_SYNC_POINTS);
+    printf("2.2 segment_length = %d\n", segment_length);
+
     /* Ensure that all segments have equal length */
     memory_blocks = segment_length * (context->lanes * ARGON2_SYNC_POINTS);
+    printf("2.3 memory_blocks = %d\n", memory_blocks);
 
     instance->version = context->version;
     instance->memory = NULL;
@@ -228,7 +234,7 @@ int argon2_ctx(argon2_context *context, argon2_instance_t *instance) {
     instance->type = Argon2_d;
     //instance->type = Argon2_i;
 
-    printf("3. Initializatio n: Hashing inputs, allocating memory, filling first blocks\n");
+    printf("3. Initialization: Hashing inputs, allocating memory, filling first blocks\n");
     /* 3. Initialization: Hashing inputs, allocating memory, filling first blocks */
     result = initialize(instance, context);
 
@@ -645,8 +651,12 @@ bool mtp_verifier(uint256 hashTarget, uint256 mtpMerkleRoot, unsigned int nNonce
 
 //
 bool mtp_hash(uint256* output, const char* input, uint256 hashTarget, CBlock *pblock) {
+    
+    printf("mtp_hash input = %s, hashTarget = %d\n", input, hashTarget);
+
     argon2_context context = init_argon2d_param(input);
     argon2_instance_t instance;
+        
     memcpy(instance.block_header, &pblock->GetHash(), sizeof(uint32_t) *4 );
     argon2_ctx(&context, &instance);
     bool result = mtp_prover(pblock, &instance, hashTarget, output);

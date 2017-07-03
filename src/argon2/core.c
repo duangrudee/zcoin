@@ -86,24 +86,30 @@ static void store_block(void *output, const block *src) {
 
 int allocate_memory(const argon2_context *context, uint8_t **memory,
                     size_t num, size_t size) {
+    
     size_t memory_size = num*size;
     if (memory == NULL) {
+        printf("allocate_memory : memory == NULL\n");
         return ARGON2_MEMORY_ALLOCATION_ERROR;
     }
 
     /* 1. Check for multiplication overflow */
     if (size != 0 && memory_size / size != num) {
+        printf("allocate_memory : multiplication overflow\n");
         return ARGON2_MEMORY_ALLOCATION_ERROR;
     }
 
     /* 2. Try to allocate with appropriate allocator */
     if (context->allocate_cbk) {
+        printf("allocate_memory : using (context->allocate_cbk)\n");
         (context->allocate_cbk)(memory, memory_size);
     } else {
+        printf("allocate_memory : creating new mem size = %lu\n", memory_size);       
         *memory = malloc(memory_size);
     }
 
     if (*memory == NULL) {
+        printf("allocate_memory : *memory == NUL\n");       
         return ARGON2_MEMORY_ALLOCATION_ERROR;
     }
 
@@ -112,11 +118,15 @@ int allocate_memory(const argon2_context *context, uint8_t **memory,
 
 void free_memory(const argon2_context *context, uint8_t *memory,
                  size_t num, size_t size) {
+        
     size_t memory_size = num*size;
+    printf("free_memory : clearing memory blocks =%d, each block size =%lu, total size = %lu\n", num, size, memory_size);                            
     clear_internal_memory(memory, memory_size);
     if (context->free_cbk) {
+        printf("use custom free callback\n");      
         (context->free_cbk)(memory, memory_size);
     } else {
+        printf("free_memory : memsize = %lu\n", memory_size);                                
         free(memory);
     }
 }
@@ -524,10 +534,14 @@ void fill_first_blocks(uint8_t *blockhash, const argon2_instance_t *instance) {
 
 void initial_hash(uint8_t *blockhash, argon2_context *context,
                   argon2_type type) {
+
+    printf("core.c initial_hash start\n");
+   
     blake2b_state BlakeHash;
     uint8_t value[sizeof(uint32_t)];
 
     if (NULL == context || NULL == blockhash) {
+        printf("core.c initial_hash faile. invalid arguments\n");   
         return;
     }
 
@@ -597,6 +611,9 @@ void initial_hash(uint8_t *blockhash, argon2_context *context,
 }
 
 int initialize(argon2_instance_t *instance, argon2_context *context) {
+
+    printf("core.c initialize\n");
+
     uint8_t blockhash[ARGON2_PREHASH_SEED_LENGTH];
     int result = ARGON2_OK;
 
@@ -605,30 +622,40 @@ int initialize(argon2_instance_t *instance, argon2_context *context) {
     instance->context_ptr = context;
 
     /* 1. Memory allocation */
-    result = allocate_memory(context, (uint8_t **)&(instance->memory),
-                             instance->memory_blocks, sizeof(block));
+    size_t size = sizeof(block);
+    printf("core.c allocate_memory of size %lu , for %d blocks\n", size, instance->memory_blocks);
+    result = allocate_memory(context, (uint8_t **)&(instance->memory), instance->memory_blocks, size);
     if (result != ARGON2_OK) {
+        printf("core.c allocate_memory of size %lu,  for %d blocks - failed, result = %d\n", size, instance->memory_blocks, result);
         return result;
     }
 
+    printf("core.c allocate_memory of size %lu - success\n",size);
+   
+  
     /* 2. Initial hashing */
     /* H_0 + 8 extra bytes to produce the first blocks */
     /* uint8_t blockhash[ARGON2_PREHASH_SEED_LENGTH]; */
     /* Hashing all inputs */
     initial_hash(blockhash, context, instance->type);
+
+    printf("core.c initial_hash completed. Clearing internal memory - 1\n");           
     /* Zeroing 8 extra bytes */
     clear_internal_memory(blockhash + ARGON2_PREHASH_DIGEST_LENGTH,
                           ARGON2_PREHASH_SEED_LENGTH -
                               ARGON2_PREHASH_DIGEST_LENGTH);
 
 #ifdef GENKAT
+    printf("core.c initial_kat starting\n");   
     initial_kat(blockhash, context, instance->type);
 #endif
 
     /* 3. Creating first blocks, we always have at least two blocks in a slice
      */
+    printf("core.c fill_first_blocks starting\n");   
     fill_first_blocks(blockhash, instance);
     /* Clearing the hash */
+    printf("core.c initial_hash completed. Clearing internal memory - 2\n");           
     clear_internal_memory(blockhash, ARGON2_PREHASH_SEED_LENGTH);
 
     return ARGON2_OK;

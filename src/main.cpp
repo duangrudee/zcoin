@@ -6499,23 +6499,31 @@ void static ZcoinMiner(CWallet *pwallet)
                     loop
                     {
                         if (!fTestNet && pindexPrev->nHeight + 1 >= HF_LYRA2Z_HEIGHT) {
+                            printf("Case 1 \n");
                             lyra2z_hash(BEGIN(pblock->nVersion), BEGIN(thash));
 
                         // Start Merkel Tree Proof of Work
                         } else if ( //(!fTestNet && pindexPrev->nHeight + 1 >= HF_MTP_HEIGHT) ||
                                               (fTestNet && pindexPrev->nHeight + 1 >= HF_MTP_HEIGHT_TESTNET)){                            
+                            printf("Case 2 \n");                                                  
                             mtpHash = mtp_hash(&thash, BEGIN(pblock->nVersion), hashTarget, pblock);
                         } else if (!fTestNet && pindexPrev->nHeight + 1 >= HF_LYRA2_HEIGHT){
+                            printf("Case 3 \n");
                             LYRA2(BEGIN(thash), 32, BEGIN(pblock->nVersion), 80, BEGIN(pblock->nVersion), 80, 2, 8192, 256);
                         } else if (!fTestNet && pindexPrev->nHeight + 1 >= HF_LYRA2VAR_HEIGHT){
+                            printf("Case 4 \n");
                             LYRA2(BEGIN(thash), 32, BEGIN(pblock->nVersion), 80, BEGIN(pblock->nVersion), 80, 2, pindexPrev->nHeight + 1, 256);
                         } else if (fTestNet && pindexPrev->nHeight + 1 >= HF_LYRA2Z_HEIGHT_TESTNET) { // testnet
+                            printf("Case 4 \n");
                             lyra2z_hash(BEGIN(pblock->nVersion), BEGIN(thash));
                         } else if (fTestNet && pindexPrev->nHeight + 1 >= HF_LYRA2_HEIGHT_TESTNET){ // testnet
+                            printf("Case 5 \n");
                             LYRA2(BEGIN(thash), 32, BEGIN(pblock->nVersion), 80, BEGIN(pblock->nVersion), 80, 2, 8192, 256);
                         } else if (fTestNet && pindexPrev->nHeight + 1 >= HF_LYRA2VAR_HEIGHT_TESTNET){ // testnet
+                            printf("Case 6 \n");
                             LYRA2(BEGIN(thash), 32, BEGIN(pblock->nVersion), 80, BEGIN(pblock->nVersion), 80, 2, pindexPrev->nHeight + 1, 256);
                         } else {
+                            printf("Case 7 \n");
                             unsigned long int scrypt_scratpad_size_current_block = ((1 << (GetNfactor(pblock->nTime) + 1)) * 128 ) + 63;
                             char scratchpad[scrypt_scratpad_size_current_block];
                             scrypt_N_1_1_256_sp_generic(BEGIN(pblock->nVersion), BEGIN(thash), scratchpad, GetNfactor(pblock->nTime));
