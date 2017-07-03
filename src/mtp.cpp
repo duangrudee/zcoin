@@ -5,8 +5,8 @@
 #include "libmerkletree/merkletree.hpp"
 
 static const uint8_t L = 70;
-//static const unsigned int memory_cost = 2097152; // 2GB
-static const unsigned int memory_cost = 262144; //250mb
+static const unsigned int memory_cost = 2097152; // 2GB
+//static const unsigned int memory_cost = 262144; //250mb
 
 static void store_block(void *output, const block *src) {
     unsigned i;
