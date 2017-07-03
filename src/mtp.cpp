@@ -6,7 +6,6 @@
 
 static const uint8_t L = 70;
 static const unsigned int memory_cost = 2097152; // 2GB
-//static const unsigned int memory_cost = 262144; //250mb
 
 static void store_block(void *output, const block *src) {
     unsigned i;
@@ -375,8 +374,11 @@ bool mtp_prover(CBlock *pblock, argon2_instance_t *instance, uint256 hashTarget,
                 blockhash_ref_block.prev_block = NULL;
                 blockhash_ref_block.ref_block = NULL;
 
-                memcpy(pblock->blockhashInBlockchain[(j * 2) - 2].proof,serializeMTP(newproof_ref),4034);
-
+                printf("Serializing MTP");
+                char* buff = serializeMTP(newproof_ref);
+                memcpy(pblock->blockhashInBlockchain[(j * 2) - 2].proof, buff ,4034);
+                std::free(buff);        
+                printf("Free up buffer used for Serializing MTP");        
 
                 block X_IJ;
                 __m128i state_test[64];
