@@ -1,263 +1,261 @@
-==17369== Memcheck, a memory error detector
-==17369== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==17369== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
-==17369== Command: ./zcoind -daemon -testnet
-==17369== Parent PID: 16942
-==17369== 
-==17369== 
-==17369== HEAP SUMMARY:
-==17369==     in use at exit: 75,664 bytes in 22 blocks
-==17369==   total heap usage: 406,853 allocs, 406,831 frees, 26,542,689 bytes allocated
-==17369== 
-==17369== LEAK SUMMARY:
-==17369==    definitely lost: 0 bytes in 0 blocks
-==17369==    indirectly lost: 0 bytes in 0 blocks
-==17369==      possibly lost: 0 bytes in 0 blocks
-==17369==    still reachable: 75,664 bytes in 22 blocks
-==17369==         suppressed: 0 bytes in 0 blocks
-==17369== Reachable blocks (those to which a pointer was found) are not shown.
-==17369== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==17369== 
-==17369== For counts of detected and suppressed errors, rerun with: -v
-==17369== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==17424== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
-==17424== Thread 12 bitcoin-msghand:
-==17424== Conditional jump or move depends on uninitialised value(s)
-==17424==    at 0x49D251: ProcessBlock(CValidationState&, CNode*, CBlock*, CDiskBlockPos*) (main.cpp:3897)
-==17424==    by 0x4A1343: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:5347)
-==17424==    by 0x4A23B3: ProcessMessages(CNode*) (main.cpp:5590)
-==17424==    by 0x4CB5E7: ThreadMessageHandler() (net.cpp:1574)
-==17424==    by 0x4D31E7: void TraceThread<void (*)()>(char const*, void (*)()) (util.h:591)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424==  Uninitialised value was created by a stack allocation
-==17424==    at 0x49E730: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:4861)
-==17424== 
-==17424== Conditional jump or move depends on uninitialised value(s)
-==17424==    at 0x49C0F6: CBlock::AcceptBlock(CValidationState&, CDiskBlockPos*) (main.cpp:3767)
-==17424==    by 0x49D432: ProcessBlock(CValidationState&, CNode*, CBlock*, CDiskBlockPos*) (main.cpp:3948)
-==17424==    by 0x4A1343: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:5347)
-==17424==    by 0x4A23B3: ProcessMessages(CNode*) (main.cpp:5590)
-==17424==    by 0x4CB5E7: ThreadMessageHandler() (net.cpp:1574)
-==17424==    by 0x4D31E7: void TraceThread<void (*)()>(char const*, void (*)()) (util.h:591)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424==  Uninitialised value was created by a stack allocation
-==17424==    at 0x49E730: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:4861)
-==17424== 
-==17424== Thread 7 ZCoin-Miner:
-==17424== Invalid write of size 1
-==17424==    at 0x5FA292: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:9)
-==17424==    by 0x5F6A5B: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:353)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424==  Address 0x86fb111 is 0 bytes after a block of size 4,033 alloc'd
-==17424==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x5FA28C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
-==17424==    by 0x5F6A5B: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:353)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424== 
-==17424== Invalid read of size 8
-==17424==    at 0x5F6A79: memcpy (string3.h:53)
-==17424==    by 0x5F6A79: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:353)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424==  Address 0x86fb10a is 4,026 bytes inside a block of size 4,033 alloc'd
-==17424==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x5FA28C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
-==17424==    by 0x5F6A5B: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:353)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424== 
-==17424== Invalid write of size 1
-==17424==    at 0x5FA292: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:9)
-==17424==    by 0x5F6E97: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:378)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424==  Address 0x83d7e31 is 0 bytes after a block of size 4,033 alloc'd
-==17424==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x5FA28C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
-==17424==    by 0x5F6E97: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:378)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424== 
-==17424== Invalid read of size 8
-==17424==    at 0x5F6EB5: memcpy (string3.h:53)
-==17424==    by 0x5F6EB5: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:378)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424==  Address 0x83d7e2a is 4,026 bytes inside a block of size 4,033 alloc'd
-==17424==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x5FA28C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
-==17424==    by 0x5F6E97: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:378)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424== 
-==17424== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
-==17424== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
-==17424== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
-==17424== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
-==17424== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
-==17424== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
-==17424== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
-==17424== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
-==17424== 
-==17424== HEAP SUMMARY:
-==17424==     in use at exit: 2,184,257,659 bytes in 669 blocks
-==17424==   total heap usage: 2,906,929 allocs, 2,906,260 frees, 13,988,220,341 bytes allocated
-==17424== 
-==17424== Thread 1 bitcoin-shutoff:
-==17424== 160 bytes in 1 blocks are definitely lost in loss record 59 of 105
-==17424==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x5843594: __os_malloc (in /usr/lib/libdb_cxx-4.8.so)
-==17424==    by 0x5811401: __env_alloc (in /usr/lib/libdb_cxx-4.8.so)
-==17424==    by 0x57CFC00: __lock_open (in /usr/lib/libdb_cxx-4.8.so)
-==17424==    by 0x58178C2: __env_attach_regions (in /usr/lib/libdb_cxx-4.8.so)
-==17424==    by 0x5817A8A: __env_open (in /usr/lib/libdb_cxx-4.8.so)
-==17424==    by 0x5730540: DbEnv::open(char const*, unsigned int, int) (in /usr/lib/libdb_cxx-4.8.so)
-==17424==    by 0x441EE6: CDBEnv::Open(boost::filesystem::path const&) (db.cpp:95)
-==17424==    by 0x4521AB: AppInit2(boost::thread_group&) (init.cpp:716)
-==17424==    by 0x457763: AppInit(int, char**) (init.cpp:243)
-==17424==    by 0x4176E9: main (init.cpp:275)
-==17424== 
-==17424== 304 bytes in 1 blocks are possibly lost in loss record 63 of 105
-==17424==    at 0x4C2FB55: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
-==17424==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
-==17424==    by 0x615326E: allocate_stack (allocatestack.c:588)
-==17424==    by 0x615326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
-==17424==    by 0x6266C6: leveldb::(anonymous namespace)::PosixEnv::Schedule(void (*)(void*), void*) (env_posix.cc:754)
-==17424==    by 0x6050EB: leveldb::DB::Open(leveldb::Options const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, leveldb::DB**) (db_impl.cc:1452)
-==17424==    by 0x5ACF0A: CLevelDB::CLevelDB(boost::filesystem::path const&, unsigned long, bool, bool) (leveldb.cpp:56)
-==17424==    by 0x5AD648: CBlockTreeDB::CBlockTreeDB(unsigned long, bool, bool) (txdb.cpp:69)
-==17424==    by 0x453A3E: AppInit2(boost::thread_group&) (init.cpp:922)
-==17424==    by 0x457763: AppInit(int, char**) (init.cpp:243)
-==17424==    by 0x4176E9: main (init.cpp:275)
-==17424== 
-==17424== 304 bytes in 1 blocks are possibly lost in loss record 64 of 105
-==17424==    at 0x4C2FB55: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
-==17424==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
-==17424==    by 0x615326E: allocate_stack (allocatestack.c:588)
-==17424==    by 0x615326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
-==17424==    by 0x54E42E8: boost::thread::start_thread_noexcept() (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x56B3F6: start_thread (thread.hpp:179)
-==17424==    by 0x56B3F6: thread<void (*)(void*), void*> (thread.hpp:392)
-==17424==    by 0x56B3F6: NewThread(void (*)(void*), void*) (util.cpp:1494)
-==17424==    by 0x4D0A91: Discover (net.cpp:1765)
-==17424==    by 0x4D0A91: StartNode(boost::thread_group&) (net.cpp:1779)
-==17424==    by 0x4546FE: AppInit2(boost::thread_group&) (init.cpp:1282)
-==17424==    by 0x457763: AppInit(int, char**) (init.cpp:243)
-==17424==    by 0x4176E9: main (init.cpp:275)
-==17424== 
-==17424== 912 bytes in 3 blocks are possibly lost in loss record 81 of 105
-==17424==    at 0x4C2FB55: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
-==17424==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
-==17424==    by 0x615326E: allocate_stack (allocatestack.c:588)
-==17424==    by 0x615326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
-==17424==    by 0x54E42E8: boost::thread::start_thread_noexcept() (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x4E454F: start_thread (thread.hpp:179)
-==17424==    by 0x4E454F: thread<boost::_bi::bind_t<long unsigned int, boost::_mfi::mf0<long unsigned int, boost::asio::io_service>, boost::_bi::list1<boost::_bi::value<boost::asio::io_service*> > > > (thread.hpp:302)
-==17424==    by 0x4E454F: create_thread<boost::_bi::bind_t<long unsigned int, boost::_mfi::mf0<long unsigned int, boost::asio::io_service>, boost::_bi::list1<boost::_bi::value<boost::asio::io_service*> > > > (thread_group.hpp:78)
-==17424==    by 0x4E454F: StartRPCThreads() (bitcoinrpc.cpp:859)
-==17424==    by 0x454807: AppInit2(boost::thread_group&) (init.cpp:1287)
-==17424==    by 0x457763: AppInit(int, char**) (init.cpp:243)
-==17424==    by 0x4176E9: main (init.cpp:275)
-==17424== 
-==17424== 12,099 bytes in 3 blocks are possibly lost in loss record 90 of 105
-==17424==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x5FA28C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
-==17424==    by 0x5F6A5B: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:353)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424== 
-==17424== 81,828 (776 direct, 81,052 indirect) bytes in 1 blocks are definitely lost in loss record 100 of 105
-==17424==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x4DE21F: void RPCListen<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> >(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > >, boost::asio::ssl::context&, bool) (bitcoinrpc.cpp:691)
-==17424==    by 0x4E740D: void RPCAcceptHandler<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> >(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > >, boost::asio::ssl::context&, bool, AcceptedConnection*, boost::system::error_code const&) (bitcoinrpc.cpp:716)
-==17424==    by 0x4EC92D: operator()<void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> >, boost::asio::ssl::context&, bool, AcceptedConnection*, const boost::system::error_code&), boost::_bi::list1<const boost::system::error_code&> > (bind.hpp:525)
-==17424==    by 0x4EC92D: operator()<boost::system::error_code> (bind_template.hpp:47)
-==17424==    by 0x4EC92D: operator() (bind_handler.hpp:47)
-==17424==    by 0x4EC92D: asio_handler_invoke<boost::asio::detail::binder1<boost::_bi::bind_t<void, void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> >, boost::asio::ssl::context&, bool, AcceptedConnection*, const boost::system::error_code&), boost::_bi::list5<boost::_bi::value<boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> > >, boost::reference_wrapper<boost::asio::ssl::context>, boost::_bi::value<bool>, boost::_bi::value<AcceptedConnectionImpl<boost::asio::ip::tcp>*>, boost::arg<1> (*)()> >, boost::system::error_code> > (handler_invoke_hook.hpp:69)
-==17424==    by 0x4EC92D: invoke<boost::asio::detail::binder1<boost::_bi::bind_t<void, void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> >, boost::asio::ssl::context&, bool, AcceptedConnection*, const boost::system::error_code&), boost::_bi::list5<boost::_bi::value<boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> > >, boost::reference_wrapper<boost::asio::ssl::context>, boost::_bi::value<bool>, boost::_bi::value<AcceptedConnectionImpl<boost::asio::ip::tcp>*>, boost::arg<1> (*)()> >, boost::system::error_code>, boost::_bi::bind_t<void, void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> >, boost::asio::ssl::context&, bool, AcceptedConnection*, const boost::system::error_code&), boost::_bi::list5<boost::_bi::value<boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> > >, boost::reference_wrapper<boost::asio::ssl::context>, boost::_bi::value<bool>, boost::_bi::value<AcceptedConnectionImpl<boost::asio::ip::tcp>*>, boost::arg<1> (*)()> > > (handler_invoke_helpers.hpp:37)
-==17424==    by 0x4EC92D: boost::asio::detail::reactive_socket_accept_op<boost::asio::basic_socket<boost::asio::ip::tcp, boost::asio::stream_socket_service<boost::asio::ip::tcp> >, boost::asio::ip::tcp, boost::_bi::bind_t<void, void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > >, boost::asio::ssl::context&, bool, AcceptedConnection*, boost::system::error_code const&), boost::_bi::list5<boost::_bi::value<boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > > >, boost::reference_wrapper<boost::asio::ssl::context>, boost::_bi::value<bool>, boost::_bi::value<AcceptedConnectionImpl<boost::asio::ip::tcp>*>, boost::arg<1> (*)()> > >::do_complete(boost::asio::detail::task_io_service*, boost::asio::detail::task_io_service_operation*, boost::system::error_code const&, unsigned long) (reactive_socket_accept_op.hpp:123)
-==17424==    by 0x4EE1B4: complete (task_io_service_operation.hpp:38)
-==17424==    by 0x4EE1B4: boost::asio::detail::epoll_reactor::descriptor_state::do_complete(boost::asio::detail::task_io_service*, boost::asio::detail::task_io_service_operation*, boost::system::error_code const&, unsigned long) (epoll_reactor.ipp:651)
-==17424==    by 0x4F3C70: complete (task_io_service_operation.hpp:38)
-==17424==    by 0x4F3C70: do_run_one (task_io_service.ipp:372)
-==17424==    by 0x4F3C70: run (task_io_service.ipp:149)
-==17424==    by 0x4F3C70: boost::asio::io_service::run() (io_service.ipp:59)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424== 
-==17424== 86,348 (776 direct, 85,572 indirect) bytes in 1 blocks are definitely lost in loss record 101 of 105
-==17424==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x4DE21F: void RPCListen<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> >(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > >, boost::asio::ssl::context&, bool) (bitcoinrpc.cpp:691)
-==17424==    by 0x4E3A86: StartRPCThreads() (bitcoinrpc.cpp:819)
-==17424==    by 0x454807: AppInit2(boost::thread_group&) (init.cpp:1287)
-==17424==    by 0x457763: AppInit(int, char**) (init.cpp:243)
-==17424==    by 0x4176E9: main (init.cpp:275)
-==17424== 
-==17424== 1,117,141 bytes in 277 blocks are definitely lost in loss record 103 of 105
-==17424==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x5FA28C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
-==17424==    by 0x5F6A5B: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:353)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424== 
-==17424== 1,129,240 bytes in 280 blocks are definitely lost in loss record 104 of 105
-==17424==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17424==    by 0x5FA28C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
-==17424==    by 0x5F6E97: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:378)
-==17424==    by 0x5F96F5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:662)
-==17424==    by 0x4A3335: ZcoinMiner(CWallet*) (main.cpp:6509)
-==17424==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
-==17424==    by 0x61526B9: start_thread (pthread_create.c:333)
-==17424==    by 0x6D103DC: clone (clone.S:109)
-==17424== 
-==17424== LEAK SUMMARY:
-==17424==    definitely lost: 2,248,093 bytes in 560 blocks
-==17424==    indirectly lost: 166,624 bytes in 49 blocks
-==17424==      possibly lost: 13,619 bytes in 8 blocks
-==17424==    still reachable: 2,181,829,323 bytes in 52 blocks
-==17424==         suppressed: 0 bytes in 0 blocks
-==17424== Reachable blocks (those to which a pointer was found) are not shown.
-==17424== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==17424== 
-==17424== For counts of detected and suppressed errors, rerun with: -v
-==17424== ERROR SUMMARY: 1151 errors from 15 contexts (suppressed: 0 from 0)
+==19218== Memcheck, a memory error detector
+==19218== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==19218== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==19218== Command: ./zcoind -daemon -testnet
+==19218== Parent PID: 18182
+==19218== 
+==19218== 
+==19218== HEAP SUMMARY:
+==19218==     in use at exit: 75,664 bytes in 22 blocks
+==19218==   total heap usage: 406,817 allocs, 406,795 frees, 26,505,350 bytes allocated
+==19218== 
+==19218== LEAK SUMMARY:
+==19218==    definitely lost: 0 bytes in 0 blocks
+==19218==    indirectly lost: 0 bytes in 0 blocks
+==19218==      possibly lost: 0 bytes in 0 blocks
+==19218==    still reachable: 75,664 bytes in 22 blocks
+==19218==         suppressed: 0 bytes in 0 blocks
+==19218== Reachable blocks (those to which a pointer was found) are not shown.
+==19218== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==19218== 
+==19218== For counts of detected and suppressed errors, rerun with: -v
+==19218== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Thread 6 ZCoin-Miner:
+==19229== Invalid write of size 1
+==19229==    at 0x5FA052: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:9)
+==19229==    by 0x5F681B: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:347)
+==19229==    by 0x5F94B5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:656)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229==  Address 0x85a1471 is 0 bytes after a block of size 4,033 alloc'd
+==19229==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x5FA04C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
+==19229==    by 0x5F681B: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:347)
+==19229==    by 0x5F94B5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:656)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229== 
+==19229== Invalid read of size 8
+==19229==    at 0x5F683C: memcpy (string3.h:53)
+==19229==    by 0x5F683C: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:348)
+==19229==    by 0x5F94B5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:656)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229==  Address 0x85a146a is 4,026 bytes inside a block of size 4,033 alloc'd
+==19229==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x5FA04C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
+==19229==    by 0x5F681B: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:347)
+==19229==    by 0x5F94B5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:656)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229== 
+==19229== Invalid write of size 1
+==19229==    at 0x5FA052: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:9)
+==19229==    by 0x5F6C67: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:375)
+==19229==    by 0x5F94B5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:656)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229==  Address 0x8c20b81 is 0 bytes after a block of size 4,033 alloc'd
+==19229==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x5FA04C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
+==19229==    by 0x5F6C67: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:375)
+==19229==    by 0x5F94B5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:656)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229== 
+==19229== Invalid read of size 8
+==19229==    at 0x5F6C88: memcpy (string3.h:53)
+==19229==    by 0x5F6C88: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:376)
+==19229==    by 0x5F94B5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:656)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229==  Address 0x8c20b7a is 4,026 bytes inside a block of size 4,033 alloc'd
+==19229==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x5FA04C: serializeMTP(std::vector<ProofNode, std::allocator<ProofNode> >&) (merkletree.cpp:8)
+==19229==    by 0x5F6C67: mtp_prover(CBlock*, Argon2_instance_t*, uint256, uint256*) (mtp.cpp:375)
+==19229==    by 0x5F94B5: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:656)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229== 
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Thread 11 bitcoin-msghand:
+==19229== Conditional jump or move depends on uninitialised value(s)
+==19229==    at 0x49D2C1: ProcessBlock(CValidationState&, CNode*, CBlock*, CDiskBlockPos*) (main.cpp:3897)
+==19229==    by 0x4A13B3: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:5347)
+==19229==    by 0x4A2423: ProcessMessages(CNode*) (main.cpp:5590)
+==19229==    by 0x4CB507: ThreadMessageHandler() (net.cpp:1574)
+==19229==    by 0x4D3107: void TraceThread<void (*)()>(char const*, void (*)()) (util.h:591)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229==  Uninitialised value was created by a stack allocation
+==19229==    at 0x49E7A0: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:4861)
+==19229== 
+==19229== Conditional jump or move depends on uninitialised value(s)
+==19229==    at 0x49C166: CBlock::AcceptBlock(CValidationState&, CDiskBlockPos*) (main.cpp:3767)
+==19229==    by 0x49D4A2: ProcessBlock(CValidationState&, CNode*, CBlock*, CDiskBlockPos*) (main.cpp:3948)
+==19229==    by 0x4A13B3: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:5347)
+==19229==    by 0x4A2423: ProcessMessages(CNode*) (main.cpp:5590)
+==19229==    by 0x4CB507: ThreadMessageHandler() (net.cpp:1574)
+==19229==    by 0x4D3107: void TraceThread<void (*)()>(char const*, void (*)()) (util.h:591)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229==  Uninitialised value was created by a stack allocation
+==19229==    at 0x49E7A0: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:4861)
+==19229== 
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Conditional jump or move depends on uninitialised value(s)
+==19229==    at 0x49C166: CBlock::AcceptBlock(CValidationState&, CDiskBlockPos*) (main.cpp:3767)
+==19229==    by 0x49D5F5: ProcessBlock(CValidationState&, CNode*, CBlock*, CDiskBlockPos*) (main.cpp:3964)
+==19229==    by 0x4A13B3: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:5347)
+==19229==    by 0x4A2423: ProcessMessages(CNode*) (main.cpp:5590)
+==19229==    by 0x4CB507: ThreadMessageHandler() (net.cpp:1574)
+==19229==    by 0x4D3107: void TraceThread<void (*)()>(char const*, void (*)()) (util.h:591)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229==  Uninitialised value was created by a stack allocation
+==19229==    at 0x49E7A0: ProcessMessage(CNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, CDataStream&) (main.cpp:4861)
+==19229== 
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== Warning: set address range perms: large range [0x395d8028, 0xbb5d8058) (noaccess)
+==19229== Warning: set address range perms: large range [0x395d8040, 0xbb5d8040) (undefined)
+==19229== 
+==19229== HEAP SUMMARY:
+==19229==     in use at exit: 2,249,107,003 bytes in 105 blocks
+==19229==   total heap usage: 5,726,559 allocs, 5,726,454 frees, 55,493,647,882 bytes allocated
+==19229== 
+==19229== Thread 1 bitcoin-shutoff:
+==19229== 160 bytes in 1 blocks are definitely lost in loss record 57 of 100
+==19229==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x5843594: __os_malloc (in /usr/lib/libdb_cxx-4.8.so)
+==19229==    by 0x5811401: __env_alloc (in /usr/lib/libdb_cxx-4.8.so)
+==19229==    by 0x57CFC00: __lock_open (in /usr/lib/libdb_cxx-4.8.so)
+==19229==    by 0x58178C2: __env_attach_regions (in /usr/lib/libdb_cxx-4.8.so)
+==19229==    by 0x5817A8A: __env_open (in /usr/lib/libdb_cxx-4.8.so)
+==19229==    by 0x5730540: DbEnv::open(char const*, unsigned int, int) (in /usr/lib/libdb_cxx-4.8.so)
+==19229==    by 0x441E66: CDBEnv::Open(boost::filesystem::path const&) (db.cpp:95)
+==19229==    by 0x45212B: AppInit2(boost::thread_group&) (init.cpp:716)
+==19229==    by 0x4576E3: AppInit(int, char**) (init.cpp:243)
+==19229==    by 0x417669: main (init.cpp:275)
+==19229== 
+==19229== 304 bytes in 1 blocks are possibly lost in loss record 61 of 100
+==19229==    at 0x4C2FB55: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
+==19229==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
+==19229==    by 0x615326E: allocate_stack (allocatestack.c:588)
+==19229==    by 0x615326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
+==19229==    by 0x54E42E8: boost::thread::start_thread_noexcept() (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x56B316: start_thread (thread.hpp:179)
+==19229==    by 0x56B316: thread<void (*)(void*), void*> (thread.hpp:392)
+==19229==    by 0x56B316: NewThread(void (*)(void*), void*) (util.cpp:1494)
+==19229==    by 0x4D09B1: Discover (net.cpp:1765)
+==19229==    by 0x4D09B1: StartNode(boost::thread_group&) (net.cpp:1779)
+==19229==    by 0x45467E: AppInit2(boost::thread_group&) (init.cpp:1282)
+==19229==    by 0x4576E3: AppInit(int, char**) (init.cpp:243)
+==19229==    by 0x417669: main (init.cpp:275)
+==19229== 
+==19229== 304 bytes in 1 blocks are possibly lost in loss record 62 of 100
+==19229==    at 0x4C2FB55: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
+==19229==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
+==19229==    by 0x615326E: allocate_stack (allocatestack.c:588)
+==19229==    by 0x615326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
+==19229==    by 0x5F3766: argon2_thread_create (in /home/aing_d/zcoin/src/zcoind)
+==19229==    by 0x5F4380: fill_memory_blocks_mtp(Argon2_instance_t*) (mtp.cpp:165)
+==19229==    by 0x5F9492: mtp_hash(uint256*, char const*, uint256, CBlock*) (mtp.cpp:655)
+==19229==    by 0x4A3379: ZcoinMiner(CWallet*) (main.cpp:6507)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229== 
+==19229== 81,828 (776 direct, 81,052 indirect) bytes in 1 blocks are definitely lost in loss record 96 of 100
+==19229==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x4DE13F: void RPCListen<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> >(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > >, boost::asio::ssl::context&, bool) (bitcoinrpc.cpp:691)
+==19229==    by 0x4E39A6: StartRPCThreads() (bitcoinrpc.cpp:819)
+==19229==    by 0x454787: AppInit2(boost::thread_group&) (init.cpp:1287)
+==19229==    by 0x4576E3: AppInit(int, char**) (init.cpp:243)
+==19229==    by 0x417669: main (init.cpp:275)
+==19229== 
+==19229== 86,348 (776 direct, 85,572 indirect) bytes in 1 blocks are definitely lost in loss record 97 of 100
+==19229==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19229==    by 0x4DE13F: void RPCListen<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> >(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > >, boost::asio::ssl::context&, bool) (bitcoinrpc.cpp:691)
+==19229==    by 0x4E732D: void RPCAcceptHandler<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> >(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > >, boost::asio::ssl::context&, bool, AcceptedConnection*, boost::system::error_code const&) (bitcoinrpc.cpp:716)
+==19229==    by 0x4EC84D: operator()<void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> >, boost::asio::ssl::context&, bool, AcceptedConnection*, const boost::system::error_code&), boost::_bi::list1<const boost::system::error_code&> > (bind.hpp:525)
+==19229==    by 0x4EC84D: operator()<boost::system::error_code> (bind_template.hpp:47)
+==19229==    by 0x4EC84D: operator() (bind_handler.hpp:47)
+==19229==    by 0x4EC84D: asio_handler_invoke<boost::asio::detail::binder1<boost::_bi::bind_t<void, void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> >, boost::asio::ssl::context&, bool, AcceptedConnection*, const boost::system::error_code&), boost::_bi::list5<boost::_bi::value<boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> > >, boost::reference_wrapper<boost::asio::ssl::context>, boost::_bi::value<bool>, boost::_bi::value<AcceptedConnectionImpl<boost::asio::ip::tcp>*>, boost::arg<1> (*)()> >, boost::system::error_code> > (handler_invoke_hook.hpp:69)
+==19229==    by 0x4EC84D: invoke<boost::asio::detail::binder1<boost::_bi::bind_t<void, void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> >, boost::asio::ssl::context&, bool, AcceptedConnection*, const boost::system::error_code&), boost::_bi::list5<boost::_bi::value<boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> > >, boost::reference_wrapper<boost::asio::ssl::context>, boost::_bi::value<bool>, boost::_bi::value<AcceptedConnectionImpl<boost::asio::ip::tcp>*>, boost::arg<1> (*)()> >, boost::system::error_code>, boost::_bi::bind_t<void, void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> >, boost::asio::ssl::context&, bool, AcceptedConnection*, const boost::system::error_code&), boost::_bi::list5<boost::_bi::value<boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp> > >, boost::reference_wrapper<boost::asio::ssl::context>, boost::_bi::value<bool>, boost::_bi::value<AcceptedConnectionImpl<boost::asio::ip::tcp>*>, boost::arg<1> (*)()> > > (handler_invoke_helpers.hpp:37)
+==19229==    by 0x4EC84D: boost::asio::detail::reactive_socket_accept_op<boost::asio::basic_socket<boost::asio::ip::tcp, boost::asio::stream_socket_service<boost::asio::ip::tcp> >, boost::asio::ip::tcp, boost::_bi::bind_t<void, void (*)(boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > >, boost::asio::ssl::context&, bool, AcceptedConnection*, boost::system::error_code const&), boost::_bi::list5<boost::_bi::value<boost::shared_ptr<boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> > > >, boost::reference_wrapper<boost::asio::ssl::context>, boost::_bi::value<bool>, boost::_bi::value<AcceptedConnectionImpl<boost::asio::ip::tcp>*>, boost::arg<1> (*)()> > >::do_complete(boost::asio::detail::task_io_service*, boost::asio::detail::task_io_service_operation*, boost::system::error_code const&, unsigned long) (reactive_socket_accept_op.hpp:123)
+==19229==    by 0x4EE0D4: complete (task_io_service_operation.hpp:38)
+==19229==    by 0x4EE0D4: boost::asio::detail::epoll_reactor::descriptor_state::do_complete(boost::asio::detail::task_io_service*, boost::asio::detail::task_io_service_operation*, boost::system::error_code const&, unsigned long) (epoll_reactor.ipp:651)
+==19229==    by 0x4F3B90: complete (task_io_service_operation.hpp:38)
+==19229==    by 0x4F3B90: do_run_one (task_io_service.ipp:372)
+==19229==    by 0x4F3B90: run (task_io_service.ipp:149)
+==19229==    by 0x4F3B90: boost::asio::io_service::run() (io_service.ipp:59)
+==19229==    by 0x54E55D4: ??? (in /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0)
+==19229==    by 0x61526B9: start_thread (pthread_create.c:333)
+==19229==    by 0x6D103DC: clone (clone.S:109)
+==19229== 
+==19229== LEAK SUMMARY:
+==19229==    definitely lost: 1,712 bytes in 3 blocks
+==19229==    indirectly lost: 166,624 bytes in 49 blocks
+==19229==      possibly lost: 608 bytes in 2 blocks
+==19229==    still reachable: 2,248,938,059 bytes in 51 blocks
+==19229==         suppressed: 0 bytes in 0 blocks
+==19229== Reachable blocks (those to which a pointer was found) are not shown.
+==19229== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==19229== 
+==19229== For counts of detected and suppressed errors, rerun with: -v
+==19229== ERROR SUMMARY: 5401 errors from 12 contexts (suppressed: 0 from 0)
